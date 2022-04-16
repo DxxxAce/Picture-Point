@@ -17,46 +17,49 @@
     <body>
         <div id="container">
             <div id="sidebar">
-                <a href="index.html">
+                <a class="button" href="index.html">
                     <img src="..\media\Logos\final\pptext.svg">
                 </a>
 
-                <a href="login.html">
-                    <img src="">
-                </a>
-
-                <a href="index.html">
-                    <img src="">
-                </a>
-
-                <a href="login.html">
-                    <img src="">
-                </a>
+                <div id="main-buttons">
+                    <a class="button" href="login.html">
+                        <img src="..\media\in-page-images\login.png">
+                    </a>
+    
+                    <a class="button" href="index.html">
+                        <img src="..\media\in-page-images\home.png">
+                    </a>
+    
+                    <a class="button" href="login.html">
+                        <img src="..\media\in-page-images\settings.png">
+                    </a>
+                </div>
                 
-                <a href="information.html">
-                    <img src="">
+                <a class="button" href="information.html">
+                    <img src="..\media\in-page-images\info.png">
                 </a>
             </div>
     
-            <div id="main">
+            <div id="main" class="center">
                 <div id="form">
-                    
                     <div id="prompt">
-                        <img src="">
+                        <img id="user-icon" src="..\media\in-page-images\user.png">
                         <h2>Connect now:</h2>
-                    <div>
+                    </div>
 
-                    <form>
-                        <input class="form-element textbar" type="text" placeholder="Username"><br>
-                        <input class="form-element textbar" type="password" placeholder="Password"><br>
+                    <form class="center">
+                        <input class="form-element textbar" type="text" placeholder="Username">
+                        <input class="form-element textbar" type="password" placeholder="Password">
 
-                        <input class="form-element" type="checkbox" id="remember" name="remember">
-                        <label for="remember">Remember me</label><br>
+                        <div id="checkbox">
+                            <input class="form-element" type="checkbox" id="remember" name="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
 
-                        <input class="form-element" type="submit" value="Login"><br>
+                        <input class="form-element" type="submit" value="Login">
                     </form>
 
-                    <div id="links">
+                    <div id="links" class="center">
                         <a class="link" href="">Forgot your password?</a>
                         <a class="link" href="register.html">Not registered yet?</a>
                     </div>
