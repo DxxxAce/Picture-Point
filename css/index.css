@@ -1,20 +1,19 @@
 body {
     background-color: #172a3a;
   }
-  .menu {
-    background-color: #698996;
+  .home-main {
+    background-color: #4F656F;
     text-align: justify;
     height: 900px;
     width: 1920px;
     border-radius: 25px;
     padding: 20px;
   }
-  .home-main {
+  .menu {
     background-color: #698996;
     text-align: justify;
     height: 940px;
     width: 100px;
-
   }
   .container {
     display: flex;
