@@ -1,18 +1,24 @@
 body {
     background-color: #172a3a;
   }
-  .home-main {
+  .box {
     background-color: #4F656F;
     text-align: justify;
-    height: 900px;
-    width: 1920px;
+    align-self: end;
+    height: 290px;
+    width: 1750px;
     border-radius: 25px;
     padding: 20px;
+  }
+  .menu-logo{
+  }
+  .photo{
+      align-self: center;
   }
   .menu {
     background-color: #698996;
     text-align: justify;
-    height: 940px;
+    height: 917px;
     width: 100px;
   }
   .container {
@@ -20,4 +26,6 @@ body {
     flex-direction: row;
     column-gap: 10px;
   }
-  
+  .home-main{
+        flex-direction: column;
+  }

@@ -1,0 +1,31 @@
+body {
+    background-color: #172a3a;
+  }
+  .box {
+    background-color: #4F656F;
+    text-align: justify;
+    align-self: end;
+    height: 290px;
+    width: 1750px;
+    border-radius: 25px;
+    padding: 20px;
+  }
+  .menu-logo{
+  }
+  .photo{
+      align-self: center;
+  }
+  .menu {
+    background-color: #698996;
+    text-align: justify;
+    height: 917px;
+    width: 100px;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+  }
+  .home-main{
+        flex-direction: column;
+  }
