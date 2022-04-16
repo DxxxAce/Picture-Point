@@ -1,9 +1,24 @@
-body{
-    background-color: #172A3A;
-}
-.menu{
+body {
+    background-color: #172a3a;
+  }
+  .menu {
     background-color: #698996;
-}
-.home-main{
-    background-color: #172A3A;
-}
+    text-align: justify;
+    height: 900px;
+    width: 1920px;
+    border-radius: 25px;
+    padding: 20px;
+  }
+  .home-main {
+    background-color: #698996;
+    text-align: justify;
+    height: 940px;
+    width: 100px;
+
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+  }
+  
