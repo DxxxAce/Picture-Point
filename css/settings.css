@@ -2,7 +2,19 @@ body {
   background-color: #172a3a;
 }
 .main {
+  background-color: #698996;
+  text-align: justify;
+  height: 300px;
+  width: 500px;
 }
 .menu {
-  background-color: aliceblue;
+  background-color: #698996;
+  text-align: justify;
+  height: 500px;
+  width: auto;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
 }
