@@ -6,7 +6,7 @@ body {
     background-color: #4F656F;
     text-align: justify;
     align-self: end;
-    width: 100%;
+    width: 98%;
     height: auto;
     border-radius: 25px;
     padding: 20px;
@@ -21,9 +21,6 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .photo{
-      align-self: center;
-  }
   .menu {
     background-color: #698996;
     text-align: justify;
@@ -37,4 +34,5 @@ body {
   }
   .home-main{
         flex-direction: column;
+        justify-content: left;
   }
