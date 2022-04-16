@@ -47,21 +47,21 @@ body {
   }
 .logo{
     position: absolute;
-    top: 0;
+    top: 0vh;
 }
 .info{
   position: absolute;
-  bottom: 0px;
+  bottom: 0vh;
 }
 .login{
   position: absolute;
-  bottom: 600px;
+  top: 35vh;
 }
 .gallery{
   position: absolute;
-  bottom: 500px;
+  bottom: 34vh;
 }
 .settings{
   position: absolute;
-  bottom: 400px;
+  bottom: 46vh;
 }
