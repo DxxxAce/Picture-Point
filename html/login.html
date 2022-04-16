@@ -5,7 +5,7 @@
         <title>Login</title>
         
         <link rel="icon" type="image/x-icon" href="..\media\Logos\final\pptext.svg">
-        <link rel="stylesheets" href="..\css\login.css">
+        <link rel="stylesheet" href="..\css\login.css">
 
         <meta charset="UTF-8">
         <meta name="author" content="Hirtopanu Alin">
@@ -15,12 +15,54 @@
     </head>
 
     <body>
-        <div id="menu">
-            <p>Ceva</p>
-        </div>
+        <div id="container">
+            <div id="sidebar">
+                <a href="index.html">
+                    <img src="..\media\Logos\final\pptext.svg">
+                </a>
 
-        <div id="main">
-            <p>Altceva</p>
+                <a href="login.html">
+                    <img src="">
+                </a>
+
+                <a href="index.html">
+                    <img src="">
+                </a>
+
+                <a href="login.html">
+                    <img src="">
+                </a>
+                
+                <a href="information.html">
+                    <img src="">
+                </a>
+            </div>
+    
+            <div id="main">
+                <div id="form">
+                    
+                    <div id="prompt">
+                        <img src="">
+                        <h2>Connect now:</h2>
+                    <div>
+
+                    <form>
+                        <input class="form-element textbar" type="text" placeholder="Username"><br>
+                        <input class="form-element textbar" type="text" placeholder="Password"><br>
+
+                        <input class="form-element" type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label><br>
+
+                        <input class="form-element" type="submit" value="Login"><br>
+                    </form>
+
+                    <div id="links">
+                        <a class="link" href="">Forgot your password?</a>
+                        <a class="link" href="register.html">Not registered yet?</a>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </body>
 </html>
