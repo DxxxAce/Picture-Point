@@ -23,9 +23,8 @@ body {
 }
 .menu {
   background-color: #698996;
-  text-align: justify;
   height: 100vh;
-  width: auto;
+  width: 4vw;
 }
 .container {
   display: flex;
@@ -35,4 +34,24 @@ body {
 .home-main{
 flex-direction: column;
 justify-content: left;
+}
+.logo{
+  position: absolute;
+  top: 0;
+}
+.info{
+position: absolute;
+bottom: 0px;
+}
+.login{
+position: absolute;
+bottom: 600px;
+}
+.gallery{
+position: absolute;
+bottom: 500px;
+}
+.settings{
+position: absolute;
+bottom: 400px;
 }
