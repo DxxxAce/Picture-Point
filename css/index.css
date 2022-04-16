@@ -21,6 +21,16 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .getstarted{
+    background-color: #FDB833;
+    border-radius: 25px;
+    margin: auto;
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .menu {
     background-color: #698996;
     text-align: justify;
@@ -36,3 +46,6 @@ body {
 	flex-direction: column;
 	justify-content: left;
   }
+.info{
+  align-items: flex-end;
+}
