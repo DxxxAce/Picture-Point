@@ -33,6 +33,6 @@ body {
     column-gap: 10px;
   }
   .home-main{
-        flex-direction: column;
-        justify-content: left;
+	flex-direction: column;
+	justify-content: left;
   }
