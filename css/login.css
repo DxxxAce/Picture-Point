@@ -1,6 +1,8 @@
 html body {
     background-color: #172a3a;
     margin: 0;
+    height: 100%;
+    width: 100%;
   }
 
 #container {
@@ -16,14 +18,18 @@ html body {
     height: 100vh;
 }
 
-
+#main {
+    height: 100%;
+    width: 100%;
+}
 
 #form {
-    background-color: #698996;
+    background-color: #4f656f;
     border-radius: 25px;
     padding: 20px;
     margin: 0 auto;
-    align-self: parent-center;
+    align-self: center;
+    vertical-align: middle;
     height: 60vh;
     width: 30vw;
     position: relative;
