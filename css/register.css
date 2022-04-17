@@ -27,7 +27,7 @@
         flex-direction: column;
         z-index: 1;
     }
-    
+
     #dropdown {
         display: none;
     }
@@ -145,7 +145,7 @@
     
     input[type=submit] {
         cursor: pointer;
-        margin: 5% 20%;
+        margin: 5% 15%;
         padding: 5% 20%;
         color: #7c3626;
         font-size: x-large;
@@ -297,4 +297,8 @@
         border: 0.05vw solid #000;
         border-radius: 20px;
     }
+}
+
+input[type=submit]:hover {
+    box-shadow: inset 0.1em 0.1em #7c3626;
 }
