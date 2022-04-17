@@ -146,8 +146,7 @@ input[type=text], input[type=password] {
 
 input[type=submit] {
     cursor: pointer;
-    margin: 2%;
-    margin-left: 20%;
+    margin: 5% 20%;
     padding: 5% 20%;
     color: #7c3626;
     font-size: x-large;
