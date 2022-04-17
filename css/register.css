@@ -299,6 +299,10 @@
     }
 }
 
+input[type=text]:hover, input[type=password]:hover {
+    border-color: #fdb833;
+}
+
 input[type=submit]:hover {
-    box-shadow: inset 0.1em 0.1em #7c3626;
+    box-shadow: inset -0.1em -0.1em #7c3626;
 }
