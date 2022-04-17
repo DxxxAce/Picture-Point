@@ -57,6 +57,9 @@ body {
   display: flex;
   height: 100%;
 }
+.image{
+  z-index: 1;
+}
 .text{
     background-color: #FDB833;
     border-radius: 40px;
