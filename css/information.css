@@ -1,10 +1,17 @@
-html,
+@media only screen and (min-width: 600px) {
+  html,
 body {
   margin: 0px;
   height: 100%;
   width: 100%;
   background-color: #172a3a;
   font-family: titillium-web;
+}
+#menumobile{
+  display: none;
+}
+#containermobile{
+  display: none;
 }
 #main {
   text-align: justify;
@@ -48,6 +55,7 @@ body {
 }
 
 #inner2 {
+ 
   clear: left;
   height: 25%;
   width: 100%;
@@ -58,27 +66,104 @@ body {
   height: 100%;
 }
 .image{
-  z-index: 1;
+  z-index: 0;
 }
 .text{
     background-color: #FDB833;
     border-radius: 40px;
     width: 20vw;
     height: 7vh;
-    font-size: 1.10vw;
+    font-size: 1.15vw;
     font-family: titillium-web;
     text-align: center;
     position: absolute;
     top: 56.5%;
-    left: 40.3%;
-    z-index: 2;
+    left: 41.7%;
+    z-index: 100;
 }
 .text2{
     background-color: #698996;
     border-radius: 25px;
-    font-size: 1.75vw;
+    font-size: 2vw;
     font-family: titillium-web;
     justify-content: center;
     text-align: center;
+    z-index: 99;
+}
+}
 
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #172a3a;
+    font-family: titillium-web;
+  }
+  #container {
+    display: none;
+  }
+  #containermobile{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #172a3a;
+    font-family: titillium-web;
+  }
+  #menumobile{
+    background-color: #698996;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 0.2vw outset #172a3a;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  .bicon {
+    width: 10vh;
+  }
+  #logomobile{
+    float: right;
+    margin-top: 1vh;
+    margin-right: 2vw;
+  }
+  #iconmenu{
+    float: left;
+    margin-top: 1vh;
+    margin-left: 2vw;
+    width: 5vw;
+  }
+  .text-pic-mobile{
+    background-color: #FDB833;
+    border-radius: 40px;
+    width: 50vw;
+    height: 6vh;
+    font-size: 4vw;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+  }
+  #mobileinner2{
+    flex: auto;
+  }
+  .text2mobile{
+    background-color: #698996;
+    border-radius: 25px;
+    font-size: 5vw;
+    font-family: titillium-web;
+    color: white;
+    text-align: center;
+    width: 70vw;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    z-index: 97;
+    position:absolute;
+    bottom: 7%;
+    left : 15%;
+  }
 }
