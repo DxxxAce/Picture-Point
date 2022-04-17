@@ -28,6 +28,10 @@
         z-index: 1;
     }
     
+    #dropdown {
+        display: none;
+    }
+    
     #logo, #info {
         height: 8vh;
         display: flex;
@@ -169,7 +173,7 @@
         row-gap: 1vw;
       }
 
-      #menubar {
+    #menubar {
         background-color: #698996;
         position: fixed;
         text-align: justify;
@@ -177,10 +181,30 @@
         height: 7.5vh;
         border-bottom: 0.2vw outset #000;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         flex-direction: row;
         z-index: 1;
+    }
+
+    #dropdown {
+        float: left;
+    }
+
+    #empty {
+        width: 1000vw;
+    }
+
+    #logo {
+        float: right;
+    }
+
+    .button {
+        height: 80%;
+        width: 1vh;
+    }
+
+    .bicon {
+        width: 7.5vh;
     }
 
     #main-buttons, #info, .empty {
@@ -219,7 +243,7 @@
         border-radius: 5%;
         align-self: center;
         vertical-align: middle;
-        height: 70vh;
+        height: 60vh;
         width: 90vw;
         display: flex;
         flex-direction: column;

@@ -214,6 +214,27 @@
         flex-direction: row;
         z-index: 1;
     }
+    
+    #dropdown {
+        float: left;
+    }
+
+    #empty {
+        width: 1000vw;
+    }
+
+    #logo {
+        float: right;
+    }
+
+    .button {
+        height: 80%;
+        width: 1vh;
+    }
+
+    .bicon {
+        width: 7.5vh;
+    }
 
     #main-buttons, #info, .empty {
         display: none;
