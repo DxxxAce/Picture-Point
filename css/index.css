@@ -10,6 +10,9 @@ body {
 #menumobile{
   display: none;
 }
+#containermobile{
+  display: none;
+}
 #main {
   text-align: justify;
   border-radius: 25px;
@@ -112,29 +115,7 @@ body {
     background-color: #172a3a;
     font-family: titillium-web;
   }
-  #menu{
-    display: none;
-  }
-  #inner1 {
-    display: none;
-  }
-  
-  #inner2 {
-    display: none;
-  }
   #container {
-    display: none;
-  }
-  .image{
-    display: none;
-  }
-  .text{
-    display: none;
-  }
-  .text2{
-    display: none;
-  }
-  .getstarted{
     display: none;
   }
 }
