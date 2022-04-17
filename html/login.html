@@ -11,60 +11,83 @@
         <meta name="author" content="Hirtopanu Alin">
         <meta name="description" content="Login Page">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="refresh" content="5">
     </head>
 
     <body>
         <div id="container">
             <div id="sidebar">
-                <a class="button" href="index.html">
-                    <img src="..\media\Logos\final\pptext.svg">
-                </a>
 
-                <div id="main-buttons">
-                    <a class="button" href="login.html">
-                        <img src="..\media\in-page-images\login.svg">
-                    </a>
-    
-                    <a class="button" href="index.html">
-                        <img src="..\media\in-page-images\home.svg">
-                    </a>
-    
-                    <a class="button" href="login.html">
-                        <img src="..\media\in-page-images\settings.svg">
+                <div id="logo" class="button">
+                    <a href="index.html">
+                        <img class="bicon" src="..\media\Logos\final\pptext.svg">
                     </a>
                 </div>
+
+                <div class="empty"></div>
+
+                <div id="main-buttons">
+                    <div id="login" class="button">
+                        <a href="login.html">
+                            <img class="bicon" src="..\media\in-page-images\login.svg">
+                        </a>
+                    </div>
+
+                    <div class="main-empty"></div>
+
+                    <div id="home" class="button">
+                        <a href="index.html">
+                            <img class="bicon" src="..\media\in-page-images\home.svg">
+                        </a>
+                    </div>
+
+                    <div class="main-empty"></div>
+
+                    <div id="settings" class="button">
+                        <a href="login.html">
+                            <img class="bicon" src="..\media\in-page-images\settings.svg">
+                        </a>
+                    </div>
+                </div>
                 
-                <a class="button" href="information.html">
-                    <img src="..\media\in-page-images\info.svg">
-                </a>
+                <div class="empty"></div>
+
+                <div id="info" class="button">
+                    <a href="information.html">
+                        <img class="bicon" src="..\media\in-page-images\info.svg">
+                    </a>
+                </div>
             </div>
     
             <div id="main" class="center">
-                <div id="form">
-                    <div id="prompt">
-                        <img id="user-icon" src="..\media\in-page-images\user.svg">
-                        <h2>Connect now:</h2>
-                    </div>
+                <div class="row"></div>
 
-                    <form class="center">
-                        <input type="text" placeholder="Username">
-                        <input type="password" placeholder="Password">
-
-                        <div id="checkbox">
-                            <input type="checkbox" id="remember">
-                            <label for="remember">Remember me</label>
+                <div>
+                    <div id="form">
+                        <div id="prompt">
+                            <img id="user-icon" src="..\media\in-page-images\user.svg">
+                            <h2>Connect now:</h2>
                         </div>
-
-                        <input type="submit" value="Login">
-                    </form>
-
-                    <div id="links" class="center">
-                        <a class="link" href="">Forgot your password?</a>
-                        <a class="link" href="register.html">Not registered yet?</a>
+    
+                        <form class="center">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+    
+                            <div id="checkbox">
+                                <input type="checkbox" id="remember">
+                                <label for="remember">Remember me</label>
+                            </div>
+    
+                            <input type="submit" value="Login">
+                        </form>
+    
+                        <div id="links" class="center">
+                            <a class="link" href="">Forgot your password?</a>
+                            <a class="link" href="register.html">Not registered yet?</a>
+                        </div>
                     </div>
-
                 </div>
+
+                <div class="row"></div>
             </div>
         </div>
     </body>
