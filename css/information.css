@@ -70,6 +70,7 @@ body {
 }
 .text{
     background-color: #FDB833;
+    color: #7C3626;
     border-radius: 40px;
     width: 20vw;
     height: 7vh;
@@ -83,6 +84,7 @@ body {
 }
 .text2{
     background-color: #698996;
+    color: white;
     border-radius: 25px;
     font-size: 2vw;
     font-family: titillium-web;
@@ -138,6 +140,7 @@ body {
   }
   .text-pic-mobile{
     background-color: #FDB833;
+    color: #7C3626;
     border-radius: 40px;
     width: 50vw;
     height: 6vh;
