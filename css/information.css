@@ -15,18 +15,6 @@ body {
     padding: 20px;
     flex: auto;
   }
-  .rounded-box{
-    background-color: #FDB833;
-    border-radius: 25px;
-    margin: auto;
-    width: 20%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: auto;
-    font-family: titillium-web;
-  }
   .container {
     display: flex;
     height: 100%;
@@ -61,4 +49,22 @@ body {
   }
   .menu-empty {
     height: 3vh;
+  }
+  .picture-container{
+    display: flex;
+  }
+  .rounded-box{
+    background-color: #FDB833;
+    position: absolute;
+    border-radius: 25px;
+    margin: auto;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+    top: 60%;
+    left: 40%;
+    z-index: 1;
+    font-family: titillium-web;
   }
