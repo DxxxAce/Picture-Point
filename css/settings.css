@@ -9,25 +9,38 @@ body {
 #main {
   background-color: #4f656f;
   text-align: justify;
-  height: 100%;
-  width: 100%;
   border-radius: 25px;
   padding: 20px;
-  vertical-align: middle
+  flex: auto;
+}
+
+#menu-buttons {
+  height: 35vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.bicon {
+  width: 7.5vh;
 }
 #menu {
   background-color: #698996;
   text-align: justify;
+  width: 10vh;
   height: 100%;
-  width: auto;
+  border-right: 0.2vw outset #172a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
-img {
-  height: 50px;
-  weight: 50px;
+.menu-empty {
+  height: 3vh;
 }
+
 #container {
   display: flex;
-  flex-direction: row;
-  column-gap: 10px;
   height: 100%;
+  weight: 100%;
 }
