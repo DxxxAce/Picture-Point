@@ -1,3 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 60 60">
-  <path fill="#172A3A" d="M30 5C16.448 5 5 16.448 5 30c0 13.553 11.448 25 25 25 13.553 0 25-11.447 25-25C55 16.448 43.553 5 30 5Zm0 12.5c4.318 0 7.5 3.18 7.5 7.5s-3.182 7.5-7.5 7.5c-4.315 0-7.5-3.18-7.5-7.5s3.185-7.5 7.5-7.5ZM17.235 41.93c2.242-3.3 5.983-5.5 10.265-5.5h5c4.285 0 8.023 2.2 10.265 5.5C39.57 45.35 35.038 47.5 30 47.5s-9.57-2.15-12.765-5.57Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="65" fill="none" viewBox="0 0 62 65">
+  <g filter="url(#a)">
+    <path fill="#172A3A" d="M51.154 46.744A26.232 26.232 0 1 0 4.75 30a26.06 26.06 0 0 0 6.096 16.744l-.038.032c.131.157.281.292.416.448.17.193.351.375.525.562a25.77 25.77 0 0 0 1.632 1.631c.172.158.35.304.525.454a26.1 26.1 0 0 0 1.856 1.466c.082.057.157.13.24.188v-.023a26.064 26.064 0 0 0 30 0v.023c.082-.058.155-.131.24-.188a26.945 26.945 0 0 0 1.856-1.466c.175-.15.353-.298.525-.454a26.257 26.257 0 0 0 1.631-1.63c.175-.188.355-.37.525-.563.133-.156.285-.29.417-.45l-.042-.03ZM31 15a8.437 8.437 0 1 1 0 16.875A8.437 8.437 0 0 1 31 15ZM16.013 46.744a9.368 9.368 0 0 1 9.362-9.244h11.25a9.367 9.367 0 0 1 9.362 9.244 22.388 22.388 0 0 1-29.974 0Z"/>
+  </g>
+  <defs>
+    <filter id="a" width="68" height="68" x="-3" y="0" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_138_2"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow_138_2" result="shape"/>
+    </filter>
+  </defs>
 </svg>

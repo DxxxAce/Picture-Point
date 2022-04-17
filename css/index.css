@@ -1,6 +1,9 @@
 body {
-    background-color: #172a3a;
-    margin: 0;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #172a3a;
+  font-family: titillium-web;
   }
   .box {
     background-color: #4F656F;
@@ -10,6 +13,7 @@ body {
     height: auto;
     border-radius: 25px;
     padding: 20px;
+    flex: auto;
   }
   .rounded-box{
     background-color: #FDB833;
@@ -20,6 +24,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: auto;
+    font-family: titillium-web;
   }
   .getstarted{
     background-color: #FDB833;
@@ -30,38 +36,41 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .menu {
-    background-color: #698996;
-    height: 100vh;
-    width: 4vw;
+    flex: auto;
+    font-family: titillium-web;
   }
   .container {
     display: flex;
-    flex-direction: row;
-    column-gap: 10px;
+    height: 100%;
+    weight: 100%;
   }
   .home-main{
 	flex-direction: column;
 	justify-content: left;
+  flex: auto;
+  font-family: titillium-web;
   }
-.logo{
-    position: absolute;
-    top: 0vh;
-}
-.info{
-  position: absolute;
-  bottom: 0vh;
-}
-.login{
-  position: absolute;
-  top: 35vh;
-}
-.gallery{
-  position: absolute;
-  bottom: 34vh;
-}
-.settings{
-  position: absolute;
-  bottom: 46vh;
-}
+  #menu-buttons {
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .bicon {
+    width: 7.5vh;
+  }
+  #menu {
+    background-color: #698996;
+    text-align: justify;
+    width: 10vh;
+    height: 99vh;
+    border-right: 0.2vw outset #172a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .menu-empty {
+    height: 3vh;
+  }
