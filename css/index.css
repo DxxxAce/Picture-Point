@@ -25,6 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     flex: auto;
+    font-family: titillium-web;
   }
   .getstarted{
     background-color: #FDB833;
@@ -36,6 +37,7 @@ body {
     justify-content: center;
     align-items: center;
     flex: auto;
+    font-family: titillium-web;
   }
   .container {
     display: flex;
@@ -46,6 +48,7 @@ body {
 	flex-direction: column;
 	justify-content: left;
   flex: auto;
+  font-family: titillium-web;
   }
   #menu-buttons {
     height: 35vh;
