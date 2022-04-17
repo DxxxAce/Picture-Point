@@ -1,74 +1,84 @@
 @media only screen and (min-width: 600px) {
+
   html,
-body {
-  margin: 0px;
-  height: 100%;
-  width: 100%;
-  background-color: #172a3a;
-  font-family: titillium-web;
-}
-#menumobile{
-  display: none;
-}
-#containermobile{
-  display: none;
-}
-#main {
-  text-align: justify;
-  border-radius: 25px;
-  flex: auto;
-}
+  body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #172a3a;
+    font-family: titillium-web;
+  }
 
-#menu-buttons {
-  height: 35vh;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
+  #menumobile {
+    display: none;
+  }
 
-.bicon {
-  width: 7.5vh;
-}
-#menu {
-  background-color: #698996;
-  text-align: justify;
-  width: 10vh;
-  height: 100%;
-  border-right: 0.2vw outset #172a3a;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-}
-.menu-empty {
-  height: 3vh;
-}
-#inner1 {
-  float: left;
-  clear: left;
-  height: 61.5%;
-  width: 100%;
-  display: flex;
-  flex: auto;
-}
+  #containermobile {
+    display: none;
+  }
 
-#inner2 {
- 
-  clear: left;
-  height: 25%;
-  width: 100%;
-  flex: auto;
-}
-#container {
-  display: flex;
-  height: 100%;
-}
-.image{
-  z-index: 0;
-}
-.text{
+  #main {
+    text-align: justify;
+    border-radius: 25px;
+    flex: auto;
+  }
+
+  #menu-buttons {
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .bicon {
+    width: 7.5vh;
+  }
+
+  #menu {
+    background-color: #698996;
+    text-align: justify;
+    width: 10vh;
+    height: 100%;
+    border-right: 0.2vw outset #172a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menu-empty {
+    height: 3vh;
+  }
+
+  #inner1 {
+    float: left;
+    clear: left;
+    height: 61.5%;
+    width: 100%;
+    display: flex;
+    flex: auto;
+  }
+
+  #inner2 {
+
+    clear: left;
+    height: 25%;
+    width: 100%;
+    flex: auto;
+  }
+
+  #container {
+    display: flex;
+    height: 100%;
+  }
+
+  .image {
+    z-index: 0;
+  }
+
+  .text {
     background-color: #FDB833;
     color: #7C3626;
     border-radius: 40px;
@@ -81,8 +91,9 @@ body {
     top: 56.5%;
     left: 41.7%;
     z-index: 100;
-}
-.text2{
+  }
+
+  .text2 {
     background-color: #698996;
     color: white;
     border-radius: 25px;
@@ -92,8 +103,9 @@ body {
     justify-content: center;
     text-align: center;
     z-index: 99;
-}
-.getstarted{
+  }
+
+  .getstarted {
     background-color: #FDB833;
     color: #7C3626;
     border-radius: 40px;
@@ -106,10 +118,11 @@ body {
     top: 90%;
     left: 41.7%;
     z-index: 98;
-}
+  }
 }
 
 @media only screen and (max-width: 600px) {
+
   html,
   body {
     margin: 0px;
@@ -118,17 +131,20 @@ body {
     background-color: #172a3a;
     font-family: titillium-web;
   }
+
   #container {
     display: none;
   }
-  #containermobile{
+
+  #containermobile {
     display: block;
     height: 100%;
     width: 100%;
     background-color: #172a3a;
     font-family: titillium-web;
   }
-  #menumobile{
+
+  #menumobile {
     background-color: #698996;
     width: 100%;
     height: 10vh;
@@ -139,21 +155,25 @@ body {
     margin-right: auto;
     display: flex;
   }
+
   .bicon {
     width: 10vh;
   }
-  #logomobile{
+
+  #logomobile {
     float: right;
     margin-top: 1vh;
     margin-right: 2vw;
   }
-  #iconmenu{
+
+  #iconmenu {
     float: left;
     margin-top: 1vh;
     margin-left: 2vw;
     width: 5vw;
   }
-  .text-pic-mobile{
+
+  .text-pic-mobile {
     background-color: #FDB833;
     color: #7C3626;
     border-radius: 40px;
@@ -165,10 +185,12 @@ body {
     top: 35%;
     left: 25%;
   }
-  #mobileinner2{
+
+  #mobileinner2 {
     flex: auto;
   }
-  .text2mobile{
+
+  .text2mobile {
     background-color: #698996;
     border-radius: 25px;
     font-size: 5.5vw;
@@ -181,11 +203,12 @@ body {
     justify-content: center;
     text-align: center;
     z-index: 97;
-    position:absolute;
+    position: absolute;
     bottom: 10%;
-    left : 15%;
+    left: 15%;
   }
-  .getstartedmobile{
+
+  .getstartedmobile {
     background-color: #FDB833;
     color: #7C3626;
     border-radius: 40px;
