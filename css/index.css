@@ -32,7 +32,6 @@ body {
   .container {
     display: flex;
     height: 100%;
-    weight: 100%;
   }
   .home-main{
 	flex-direction: column;
