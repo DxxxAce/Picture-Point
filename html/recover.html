@@ -2,18 +2,99 @@
 
 <html lang="en">
     <head>
-        <title>Password Recovery</title>
+        <title>Account Recovery</title>
         
         <link rel="icon" type="image/x-icon" href="../media/Logos/final/pptext.svg">
         <link rel="stylesheet" href="../css/recover.css">
 
         <meta charset="UTF-8">
         <meta name="author" content="Hirtopanu Alin">
-        <meta name="description" content="Login Page">
+        <meta name="description" content="Account Recovery Page">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
-        <p>This content is not yet available.</p>
+        <div id="container">
+            <div id="menubar">
+                <div id="dropdown" class="button">
+                    <a href="">
+                        <img class="bicon" src="../media/in-page-images/dropdown.svg" alt="Menu">
+                    </a>
+                </div>
+
+                <div id="empty"></div>
+
+                <div id="logo" class="button">
+                    <a href="index.html">
+                        <img class="bicon" src="../media/Logos/final/pptext.svg" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="empty"></div>
+
+                <div id="main-buttons">
+                    <div id="login" class="button">
+                        <a href="login.html">
+                            <img class="bicon" src="../media/in-page-images/login.svg" alt="Login">
+                        </a>
+                    </div>
+
+                    <div class="main-empty"></div>
+
+                    <div id="home" class="button">
+                        <a href="index.html">
+                            <img class="bicon" src="../media/in-page-images/home.svg" alt="Home">
+                        </a>
+                    </div>
+
+                    <div class="main-empty"></div>
+
+                    <div id="settings" class="button">
+                        <a href="settings.html">
+                            <img class="bicon" src="../media/in-page-images/settings.svg" alt="Settings">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="empty"></div>
+
+                <div id="info" class="button">
+                    <a href="information.html">
+                        <img class="bicon" src="../media/in-page-images/info.svg" alt="About">
+                    </a>
+                </div>
+            </div>
+    
+            <div id="main">
+                <div class="row"></div>
+
+                <div id="mid">
+                    <div class="column"></div>
+
+                    <div id="square">
+                        <div id="form">
+                            <div id="prompt">
+                                <img id="user-icon" src="../media/in-page-images/user.svg" alt="Icon">
+                                <h2>Recover password:</h2>
+                            </div>
+        
+                            <form>
+                                <div id="text-input">
+                                    <input type="text" placeholder="Email">
+                                </div>
+        
+                                <input type="submit" value="Send">
+                            </form>
+                            
+                            <a id="link" href="login.html">Back</a>
+                        </div>
+                    </div>
+    
+                    <div class="column"></div>
+                </div>
+
+                <div class="row"></div>
+            </div>
+        </div>
     </body>
 </html>
