@@ -6,6 +6,7 @@
         
         <link rel="icon" type="image/x-icon" href="../media/Logos/final/pptext.svg">
         <link rel="stylesheet" href="../css/login.css">
+        <script src="../js/dropdown.js" defer></script>
 
         <meta charset="UTF-8">
         <meta name="author" content="Hirtopanu Alin">
@@ -17,16 +18,23 @@
         <div id="container">
             <div id="menubar">
                 <div id="dropdown" class="button">
-                    <a href="">
-                        <img class="bicon" src="../media/in-page-images/dropdown.svg" alt="Menu">
-                    </a>
+                    <button id="dropbtn">
+                        <img id="menu-icon" src="../media/in-page-images/dropdown.svg" alt="Menu">
+                    </button>
+
+                    <div id="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="login.html">Connect</a>
+                        <a href="settings.html">Settings</a>
+                        <a href="information.html">About</a>
+                    </div>
                 </div>
 
                 <div id="empty"></div>
 
                 <div id="logo" class="button">
                     <a href="index.html">
-                        <img class="bicon" src="../media/Logos/final/pptext.svg" alt="Logo">
+                        <img id="logo-icon" class="bicon" src="../media/Logos/final/pptext.svg" alt="Logo">
                     </a>
                 </div>
 
