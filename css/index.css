@@ -21,6 +21,10 @@
     flex: auto;
   }
 
+  #image {
+    width: 100%;
+  }
+
   #menu-buttons {
     height: 35vh;
     display: flex;
