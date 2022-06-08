@@ -23,7 +23,7 @@
   }
 
   #image {
-    width: auto;
+    width: 100%;
   }
 
   #menu-buttons {
@@ -141,8 +141,8 @@
     display: flex;
   }
 
-  #image {
-    width: auto;
+  #image-mobile {
+    width: 100%;
   }
 
   .bicon {
