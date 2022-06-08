@@ -251,9 +251,9 @@
   #dropdown-content {
     position: absolute;
     background-color: #698996;
-    border: 0.5vw solid rgb(184, 184, 184);
-    border-radius: .25rem;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.578);
+    border: 0.5vw solid #999798;
+    border-radius: 0.25rem;
+    box-shadow: 0 3px 5px 0 #000;
     margin: 0.5vw;
     min-width: 30vw;
     min-height: 10vh;
