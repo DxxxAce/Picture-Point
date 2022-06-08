@@ -132,6 +132,10 @@
     display: none;
   }
 
+  #image {
+    width: 100%;
+  }
+
   #containermobile {
     display: block;
     height: 100%;
