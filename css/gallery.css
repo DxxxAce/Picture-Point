@@ -2,18 +2,20 @@
   #menumobile {
     display: none;
   }
+
   #containermobile {
     display: none;
   }
 
   html,
   body {
-    margin: 0px;
+    margin: 0;
     height: 100%;
     width: 100%;
     background-color: #172a3a;
-    font-family: titillium-web;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
+
   #main {
     background-color: #698996;
     text-align: justify;
@@ -29,6 +31,7 @@
     justify-content: space-between;
     flex-direction: column;
   }
+
   #inner1 {
     background-color: #4f656f;
     margin-bottom: 5vh;
@@ -36,49 +39,52 @@
     padding: 20px;
     height: 15%;
   }
+
   #nav-bar {
     text-align: center;
     align-items: center;
     display: flex;
   }
+
   #facebook {
-    margin-left: 3vh;
     background-color: #698996;
     border-radius: 20px;
     padding: 20px;
     margin: 0 auto;
   }
+
   #instagram {
-    margin-left: 3vh;
     background-color: #698996;
     border-radius: 20px;
     padding: 20px;
     margin: 0 auto;
   }
+
   #reddit {
-    margin-left: 3vh;
     background-color: #698996;
     border-radius: 20px;
     padding: 20px;
     margin: 0 auto;
   }
+
   #twitter {
-    margin-left: 3vh;
     background-color: #698996;
     border-radius: 20px;
     padding: 20px;
     margin: 0 auto;
   }
+
   .plat-icon {
     width: 5vh;
   }
+
   #upload {
-    margin-left: 3vh;
     background-color: #698996;
     border-radius: 20px;
     padding: 20px;
     margin: 0 auto;
   }
+
   #inner2 {
     background-color: #4f656f;
     border-radius: 20px;
@@ -86,9 +92,11 @@
     height: 60%;
     text-align: center;
   }
+
   .bicon {
     width: 7.5vh;
   }
+
   #upload-text {
     text-align: center;
     background-color: #fdb833;
@@ -101,6 +109,7 @@
     font-size: 140%;
     font-weight: bold;
   }
+
   #menu {
     background-color: #698996;
     text-align: justify;
@@ -114,6 +123,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   .menu-empty {
     height: 3vh;
   }
@@ -126,28 +136,32 @@
   #container {
     display: flex;
     height: 100%;
-    weight: 100%;
+    width: 100%;
   }
 }
+
 @media only screen and (max-width: 600px) {
   html,
   body {
-    margin: 0px;
+    margin: 0;
     height: 100%;
     width: 100%;
     background-color: #172a3a;
-    font-family: titillium-web;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
+
   #container {
     display: none;
   }
+
   #container-mobile {
     display: block;
     height: 100%;
     width: 100%;
     background-color: #172a3a;
-    font-family: titillium-web;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
+
   #menumobile {
     background-color: #698996;
     width: 100%;
@@ -159,20 +173,24 @@
     margin-right: auto;
     display: flex;
   }
+
   .bicon {
     width: 10vh;
   }
+
   #logomobile {
     float: right;
     margin-top: 1vh;
     margin-right: 2vw;
   }
+
   #iconmenu {
     float: left;
     margin-top: 1vh;
     margin-left: 2vw;
     width: 5vw;
   }
+
   #mainmobile {
     background-color: #698996;
     height: 100%;
@@ -180,10 +198,7 @@
     border-radius: 25px;
     padding: 20px;
   }
-  #interact-area {
-    background-color: #4f656f;
-    width: 100%;
-  }
+
   #platforms-mobile {
     background-color: #4f656f;
     width: 90%;
@@ -193,45 +208,47 @@
     border-radius: 25px;
     padding: 20px;
   }
+
   .plat-icon-mobile {
     width: 3.5vh;
     margin: 0 auto;
   }
+
   #facebook {
-    margin-left: 0.5vh;
     background-color: #698996;
     border-radius: 30px;
     padding: 10px;
     margin: 0 auto;
   }
+
   #instagram {
-    margin-left: 0.5vh;
     background-color: #698996;
     border-radius: 30px;
     padding: 10px;
     margin: 0 auto;
   }
+
   #reddit {
-    margin-left: 0.5vh;
     background-color: #698996;
     border-radius: 30px;
     padding: 10px;
     margin: 0 auto;
   }
+
   #twitter {
-    margin-left: 0.5vh;
     background-color: #698996;
     border-radius: 30px;
     padding: 10px;
     margin: 0 auto;
   }
+
   #upload {
-    margin-left: 0.5vh;
     background-color: #698996;
     border-radius: 30px;
     padding: 10px;
     margin: 0 auto;
   }
+
   #upload-text {
     text-align: center;
     background-color: #fdb833;
@@ -245,6 +262,7 @@
     font-size: 120%;
     font-weight: bold;
   }
+
   #interact-area {
     background-color: #4f656f;
     border-radius: 20px;

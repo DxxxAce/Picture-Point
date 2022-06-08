@@ -2,18 +2,20 @@
   #menumobile {
     display: none;
   }
+
   #containermobile {
     display: none;
   }
 
   html,
   body {
-    margin: 0px;
+    margin: 0;
     height: 100%;
     width: 100%;
     background-color: #172a3a;
-    font-family: titillium-web;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
+
   #main {
     background-color: #698996;
     text-align: justify;
@@ -32,6 +34,7 @@
   .bicon {
     width: 7.5vh;
   }
+
   #menu {
     background-color: #698996;
     text-align: justify;
@@ -45,9 +48,11 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   .menu-empty {
     height: 3vh;
   }
+
   #inner1 {
     float: left;
     height: 20%;
@@ -62,14 +67,17 @@
     width: 100%;
     display: flex;
   }
+
   #inner-left {
     background-color: #698996;
     width: 50%;
   }
+
   #inner-right {
     background-color: #698996;
     width: 50%;
   }
+
   #delete-acc {
     background-color: #b12929;
     text-align: center;
@@ -82,16 +90,19 @@
     color: #ffff;
     font-size: 200%;
   }
+
   .plat-icon {
     width: 10vh;
     margin-top: 5vh;
     margin-left: 3vh;
     margin-right: 3vh;
   }
+
   a {
     text-decoration: none;
     color: #ffff;
   }
+
   #platforms {
     background-color: #4f656f;
     height: 50%;
@@ -105,6 +116,7 @@
     color: #ffff;
     font-size: 180%;
   }
+
   #username {
     background-color: #4f656f;
     text-align: center;
@@ -115,6 +127,7 @@
     border-radius: 25px;
     padding: 20px;
   }
+
   #password {
     background-color: #4f656f;
     text-align: center;
@@ -125,6 +138,7 @@
     border-radius: 25px;
     padding: 20px;
   }
+
   #email {
     background-color: #4f656f;
     text-align: center;
@@ -135,6 +149,7 @@
     border-radius: 25px;
     padding: 20px;
   }
+
   #settings {
     text-align: center;
     background-color: #fdb833;
@@ -146,31 +161,36 @@
     color: #7c3626;
     font-size: 200%;
   }
+
   #container {
     display: flex;
     height: 100%;
-    weight: 100%;
+    width: 100%;
   }
 }
+
 @media only screen and (max-width: 600px) {
   html,
   body {
-    margin: 0px;
+    margin: 0;
     height: 100%;
     width: 100%;
     background-color: #172a3a;
-    font-family: titillium-web;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
+
   #container {
     display: none;
   }
+
   #container-mobile {
     display: block;
     height: 100%;
     width: 100%;
     background-color: #172a3a;
-    font-family: titillium-web;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
+
   #menumobile {
     background-color: #698996;
     width: 100%;
@@ -182,20 +202,24 @@
     margin-right: auto;
     display: flex;
   }
+
   .bicon {
     width: 10vh;
   }
+
   #logomobile {
     float: right;
     margin-top: 1vh;
     margin-right: 2vw;
   }
+
   #iconmenu {
     float: left;
     margin-top: 1vh;
     margin-left: 2vw;
     width: 5vw;
   }
+
   #mainmobile {
     background-color: #698996;
     height: 100%;
@@ -203,6 +227,7 @@
     border-radius: 25px;
     padding: 20px;
   }
+
   #settings-mobile {
     width: 30%;
     background-color: #fdb833;
@@ -215,6 +240,7 @@
     font-size: 120%;
     font-weight: bold;
   }
+
   #username-mobile {
     background-color: #4f656f;
     border-radius: 25px;
@@ -225,6 +251,7 @@
     margin-bottom: 3vh;
     font-weight: bold;
   }
+
   #email-mobile {
     background-color: #4f656f;
     border-radius: 25px;
@@ -235,6 +262,7 @@
     margin-bottom: 3vh;
     font-weight: bold;
   }
+
   #password-mobile {
     background-color: #4f656f;
     border-radius: 25px;
@@ -245,6 +273,7 @@
     margin-bottom: 3vh;
     font-weight: bold;
   }
+
   #delete-mobile {
     background-color: #b12929;
     border-radius: 25px;
@@ -255,6 +284,7 @@
     margin-bottom: 3vh;
     font-weight: bold;
   }
+
   #platforms-mobile {
     background-color: #4f656f;
     border-radius: 25px;
@@ -266,6 +296,7 @@
     margin-bottom: 3vh;
     font-weight: bold;
   }
+
   .plat-icon-mobile {
     width: 5vh;
     margin: 2vh;
