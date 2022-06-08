@@ -192,16 +192,18 @@
     z-index: 1;
   }
 
-  #dropdown {
+  div#dropdown.button {
     float: left;
+    width: 8vh;
   }
 
   #empty {
-    width: 1000vw;
+    display: none;
   }
 
-  #logo {
+  div#logo.button {
     float: right;
+    width: 8vh;
   }
 
   .button {
@@ -209,8 +211,14 @@
     width: 1vh;
   }
 
-  .bicon {
+  #menu-icon {
+    width: 6.8vh;
+    padding-top: 0.6vh;
+  }
+
+  #logo-icon {
     width: 7.5vh;
+    padding-top: 0.5vh;
   }
 
   #main-buttons,
