@@ -22,6 +22,10 @@
     flex: auto;
   }
 
+  #image {
+    width: 100%;
+  }
+
   #menu-buttons {
     height: 35vh;
     display: flex;
@@ -135,6 +139,10 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
+  }
+
+  #image {
+    width: 100%;
   }
 
   .bicon {
