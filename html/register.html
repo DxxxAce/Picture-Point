@@ -6,6 +6,7 @@
         
         <link rel="icon" type="image/x-icon" href="../media/Logos/final/pptext.svg">
         <link rel="stylesheet" href="../css/register.css">
+        <link rel="stylesheet" href="../css/navbar.css">
 
         <meta charset="UTF-8">
         <meta name="author" content="Hirtopanu Alin">
@@ -15,11 +16,18 @@
 
     <body>
         <div id="container">
-            <div id="menubar">
+            <nav id="menubar">
                 <div id="dropdown" class="button">
-                    <a href="">
+                    <button id="dropbtn">
                         <img id="menu-icon" src="../media/in-page-images/dropdown.svg" alt="Menu">
-                    </a>
+                    </button>
+
+                    <div id="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="login.html">Connect</a>
+                        <a href="settings.html">Settings</a>
+                        <a href="information.html">About</a>
+                    </div>
                 </div>
                 
                 <div id="empty"></div>
@@ -63,7 +71,7 @@
                         <img class="bicon" src="../media/in-page-images/info.svg" alt="About">
                     </a>
                 </div>
-            </div>
+            </nav>
     
             <div id="main">
                 <div class="row"></div>
@@ -88,7 +96,7 @@
                             <input type="submit" value="Register">
                         </form>
 
-                        <a id="link" href="login.html">Already a member?</a>
+                        <a id="link" href="login.html">Back</a>
                     </div>
 
                     <div class="column"></div>
