@@ -1,0 +1,213 @@
+@media only screen and (min-width: 1000px) {
+  html,
+  body {
+    background-color: #172a3a;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: #fff;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+  }
+
+  #main {
+    height: 100vh;
+    width: 100vw;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row {
+    display: block;
+    height: 15vh;
+    width: inherit;
+  }
+
+  #mid {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .column {
+    display: block;
+    width: 50vh;
+  }
+
+  #form {
+    background-color: #4f656f;
+    box-shadow: 0.5em 0.5em #10212c;
+    border-radius: 5%;
+    align-self: center;
+    vertical-align: middle;
+    height: 80vh;
+    width: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  #prompt {
+    font-size: x-large;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #text-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    margin: 2%;
+    padding: 5%;
+    color: #172a3a;
+    fill-opacity: 30%;
+    font-size: x-large;
+    border: none;
+    border: 0.15vw solid #000;
+    border-radius: 10px;
+  }
+
+  input[type="submit"] {
+    cursor: pointer;
+    margin: 5% 15%;
+    padding: 5% 20%;
+    color: #7c3626;
+    font-size: x-large;
+    align-self: center;
+    background-color: #fdb833;
+    border: none;
+    border: 0.05vw solid #000;
+    border-radius: 20px;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  html,
+  body {
+    background-color: #172a3a;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: #fff;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vw;
+  }
+
+  #main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+  }
+
+  .row {
+    display: block;
+    height: 5vh;
+    width: inherit;
+  }
+
+  #mid {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .column {
+    display: block;
+    width: 5vw;
+  }
+
+  #form {
+    background-color: #4f656f;
+    box-shadow: 0.5em 0.5em #10212c;
+    border-radius: 5%;
+    align-self: center;
+    vertical-align: middle;
+    height: 60vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  #prompt {
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #text-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    margin: 2%;
+    padding: 5%;
+    color: #172a3a;
+    fill-opacity: 30%;
+    font-size: large;
+    border: none;
+    border: 0.15vw solid #000;
+    border-radius: 20px;
+  }
+
+  input[type="submit"] {
+    cursor: pointer;
+    margin: 5% 15%;
+    padding: 5% 20%;
+    color: #7c3626;
+    font-size: large;
+    align-self: center;
+    background-color: #fdb833;
+    border: none;
+    border: 0.05vw solid #000;
+    border-radius: 20px;
+  }
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+  border-color: #fdb833;
+}
+
+input[type="submit"]:hover {
+  box-shadow: inset -0.1em -0.1em #7c3626;
+}
+
+#link {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 5%;
+}
+
+#link:hover {
+  color: #7c3626;
+}
