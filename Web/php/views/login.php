@@ -88,7 +88,7 @@
                         <h2>Connect now:</h2>
                     </div>
 
-                    <form>
+                    <form action="" method="">
                         <div id="text-input">
                             <input type="text" placeholder="Username">
                             <input type="password" placeholder="Password">

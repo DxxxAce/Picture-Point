@@ -87,12 +87,12 @@
                     <h2>Sign up now:</h2>
                 </div>
 
-                <form>
+                <form action="" method="post">
                     <div id="text-input">
-                        <input type="text" placeholder="Username">
-                        <input type="text" placeholder="Email">
-                        <input type="password" placeholder="Password">
-                        <input type="password" placeholder="Confirm Password">
+                        <input type="text" placeholder="Username" name="username">
+                        <input type="email" placeholder="Email" name="email">
+                        <input type="password" placeholder="Password" name="pass">
+                        <input type="password" placeholder="Confirm Password" name="confirmPass">
                     </div>
 
                     <input type="submit" value="Register">
