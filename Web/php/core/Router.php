@@ -1,5 +1,7 @@
 <?php
 namespace app\core;
+use app\controllers\SiteController;
+
 class Router
 {
 
@@ -30,7 +32,8 @@ class Router
        $method = $this->request->method();
        $callback = $this->routes[$method][$path] ?? false;
        if($callback === false ){
-          $this->response->setStatusCode(404);
+           Application::$app->controller = new SiteController();
+           $this->response->setStatusCode(404);
            return $this->renderView("_404");
        }
        if(is_string($callback)){
@@ -51,11 +54,11 @@ class Router
         $viewContent = $this->renderOnlyView($view,$params);
         return str_replace('{{content}}',$viewContent,$layoutContent);
     }
-    public function renderContent(string $viewContent)
+   /* public function renderContent(string $viewContent)
     {
         $layoutContent = $this->layoutContent();
         return str_replace('{{content}}',$viewContent,$layoutContent);
-    }
+    }*/
     protected function layoutContent()
     {
         $layout = Application::$app->controller->layout;
