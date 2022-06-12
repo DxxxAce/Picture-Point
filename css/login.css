@@ -1,4 +1,4 @@
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 950px) {
   html,
   body {
     background-color: #172a3a;
@@ -41,10 +41,17 @@
     width: 50vh;
   }
 
+  #square {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   #form {
     background-color: #4f656f;
     box-shadow: 0.5em 0.5em #10212c;
-    border-radius: 5%;
+    border-radius: 10px;
     align-self: center;
     vertical-align: middle;
     height: 100%;
@@ -113,7 +120,7 @@
   }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   html,
   body {
     background-color: #172a3a;
@@ -156,13 +163,21 @@
     width: 5vw;
   }
 
+  #square {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(4vh);
+  }
+
   #form {
     background-color: #4f656f;
     box-shadow: 0.5em 0.5em #10212c;
-    border-radius: 5%;
+    border-radius: 10px;
     align-self: center;
     vertical-align: middle;
-    height: 60vh;
+    height: 100%;
     width: 90vw;
     display: flex;
     flex-direction: column;
