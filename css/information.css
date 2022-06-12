@@ -54,6 +54,18 @@
     font-size: 9.5vh;
   }
 
+  #subtitle {
+    color: #fff;
+    font-size: 6.5vh;
+  }
+
+  .team {
+    width: 85%;
+    margin: 5vw;
+    text-align: center;
+    font-size: 4vh;
+  }
+
   #text {
     margin: 3vw;
     background-color: #4f656f;
@@ -114,6 +126,19 @@
     margin-bottom: 8vw;
   }
 
+  #subtitle {
+    color: #fff;
+    font-size: 7vw;
+    margin-bottom: 8vw;
+  }
+
+  .team {
+    width: 85%;
+    margin: 5vw;
+    text-align: center;
+    font-size: 2.5vh;
+  }
+
   #text {
     margin: 6vw;
     padding: 1.5vw;
@@ -135,4 +160,15 @@ p a {
 
 p a:hover {
   color: #7c3626;
+}
+
+#team-pics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  width: 85%;
+  border-radius: 20px;
 }
