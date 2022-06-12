@@ -26,7 +26,7 @@
 
             <div id="dropdown-content">
                 <a href="/Web-Project/Web/php/public/index.php">Home</a>
-                <a href="login.html">Connect</a>
+                <a href="/Web-Project/Web/php/public/index.php/login">Connect</a>
                 <a href="settings.html">Settings</a>
                 <a href="/Web-Project/Web/php/public/index.php/information">About</a>
             </div>
@@ -44,7 +44,7 @@
 
         <div id="main-buttons">
             <div id="login" class="button">
-                <a href="login.html">
+                <a href="/Web-Project/Web/php/public/index.php/login">
                     <img class="bicon" src="../media/in-page-images/login.svg" alt="Login">
                 </a>
             </div>
@@ -89,7 +89,7 @@
                 <p>Then this is where our app comes in to help you!</p>
             </div>
 
-            <a class="text-button" href="../html/login.html">
+            <a class="text-button" href="/Web-Project/Web/php/public/index.php/login">
                 <p>Get Started</p>
             </a>
 

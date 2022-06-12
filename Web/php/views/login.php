@@ -4,15 +4,15 @@
 
 <html lang="en">
 <head>
-    <title>Register</title>
+    <title>Login</title>
 
     <link rel="icon" type="image/x-icon" href="../media/Logos/final/pptext.svg">
-    <link rel="stylesheet" href="../../css/register.css">
+    <link rel="stylesheet" href="../../css/login.css">
     <link rel="stylesheet" href="../../css/navbar.css">
 
     <meta charset="UTF-8">
     <meta name="author" content="Hirtopanu Alin">
-    <meta name="description" content="Register Page">
+    <meta name="description" content="Login Page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -26,9 +26,9 @@
 
             <div id="dropdown-content">
                 <a href="/Web-Project/Web/php/public/index.php">Home</a>
-                <a href="/Web-Project/Web/php/public/index.php/login">Connect</a>
+                <a href="login.html">Connect</a>
                 <a href="settings.html">Settings</a>
-                <a href="/Web-Project/Web/php/public/index.php/information">About</a>
+                <a href="information.html">About</a>
             </div>
         </div>
 
@@ -44,7 +44,7 @@
 
         <div id="main-buttons">
             <div id="login" class="button">
-                <a href="/Web-Project/Web/php/public/index.php/login">
+                <a href="login.html">
                     <img class="bicon" src="../../media/in-page-images/login.svg" alt="Login">
                 </a>
             </div>
@@ -69,7 +69,7 @@
         <div class="empty"></div>
 
         <div id="info" class="button">
-            <a href="/Web-Project/Web/php/public/index.php/information">
+            <a href="information.html">
                 <img class="bicon" src="../../media/in-page-images/info.svg" alt="About">
             </a>
         </div>
@@ -81,29 +81,36 @@
         <div id="mid">
             <div class="column"></div>
 
-            <div id="form">
-                <div id="prompt">
-                    <img id="user-icon" src="../../media/in-page-images/user.svg" alt="User">
-                    <h2>Sign up now:</h2>
-                </div>
-
-                <form>
-                    <div id="text-input">
-                        <input type="text" placeholder="Username">
-                        <input type="text" placeholder="Email">
-                        <input type="password" placeholder="Password">
-                        <input type="password" placeholder="Confirm Password">
+            <div id="square">
+                <div id="form">
+                    <div id="prompt">
+                        <img id="user-icon" src="../../media/in-page-images/user.svg" alt="Icon">
+                        <h2>Connect now:</h2>
                     </div>
 
-                    <input type="submit" value="Register">
-                </form>
+                    <form>
+                        <div id="text-input">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                        </div>
 
-                <a id="link" href="/Web-Project/Web/php/public/index.php/login">Back</a>
+                        <div id="checkbox">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+
+                        <input type="submit" value="Login">
+                    </form>
+
+                    <div id="links">
+                        <a class="link" href="recover.html">Forgot your password?</a>
+                        <a class="link" href="/Web-Project/Web/php/public/index.php/register">Not registered yet?</a>
+                    </div>
+                </div>
             </div>
 
             <div class="column"></div>
         </div>
-
 
         <div class="row"></div>
     </div>
