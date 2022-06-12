@@ -6,7 +6,7 @@
 <head>
     <title>Home</title>
 
-    <link rel="icon" type="image/x-icon" href="../../media/Logos/final/pptext.svg"/>
+    <link rel="icon" type="image/x-icon" href="../media/Logos/final/pptext.svg"/>
     <link rel="stylesheet" href="../../css/index.css"/>
     <link rel="stylesheet" href="../../css/navbar.css"/>
 
@@ -20,12 +20,12 @@
 <div id="containermobile">
     <div id="menumobile">
         <div id="iconmenu">
-            <img src="../../media/in-page-images/dropdown.svg" alt="menu-mobile"/>
+            <img src="../media/in-page-images/dropdown.svg" alt="menu-mobile"/>
         </div>
 
         <div id="logomobile">
-            <a href="/html/index.html">
-                <img class="bicon" src="../../media/Logos/final/pptext.svg" alt="logo-mobile"/>
+            <a href="index.html">
+                <img class="bicon" src="../media/Logos/final/pptext.svg" alt="logo-mobile"/>
             </a>
         </div>
     </div>
@@ -33,7 +33,7 @@
     <div id="mainmobile">
         <div id="picture-textmobile">
             <div class="image">
-                <img id="image-mobile" src="../../media/in-page-images/index-about-gallery-mobile.png" alt="Artgallery">
+                <img id="image-mobile" src="../media/in-page-images/index-about-gallery-mobile.png" alt="Artgallery">
             </div>
 
             <div class="text-pic-mobile">
@@ -50,7 +50,7 @@
                     </p>
                 </div>
 
-                <a href="/html/login.html">
+                <a href="../html/login.html">
                     <div class="getstartedmobile">
                         <p>Get Started!</p>
                     </div>
@@ -62,34 +62,34 @@
 
 <div id="container">
     <div id="menu">
-        <a href="/html/index.html">
-            <img class="bicon" src="../../media/Logos/final/pptext.svg" alt="logo"/>
+        <a href="index.html">
+            <img class="bicon" src="../media/Logos/final/pptext.svg" alt="logo"/>
         </a>
 
         <div class="empty"></div>
 
         <div id="menu-buttons">
-            <a href="/html/login.html">
-                <img class="bicon" src="../../media/in-page-images/login.svg" alt="login-icon"/>
+            <a href="login.html">
+                <img class="bicon" src="../media/in-page-images/login.svg" alt="login-icon"/>
             </a>
 
             <div class="menu-empty"></div>
 
-            <a href="/html/gallery.html">
-                <img class="bicon" src="../../media/in-page-images/gallery.svg" alt="gallery-icon"/>
+            <a href="gallery.html">
+                <img class="bicon" src="../media/in-page-images/gallery.svg" alt="gallery-icon"/>
             </a>
 
             <div class="menu-empty"></div>
 
-            <a href="/html/login.html">
-                <img class="bicon" src="../../media/in-page-images/settings.svg" alt="settings-icon"/>
+            <a href="login.html">
+                <img class="bicon" src="../media/in-page-images/settings.svg" alt="settings-icon"/>
             </a>
         </div>
 
         <div class="empty"></div>
 
-        <a href="/html/information.html">
-            <img class="bicon" src="../../media/in-page-images/info.svg" alt="information-icon"/>
+        <a href="information.html">
+            <img class="bicon" src="../media/in-page-images/info.svg" alt="information-icon"/>
         </a>
     </div>
 
@@ -97,7 +97,7 @@
         <div id="inner1">
             <div id="image-text">
                 <div class="image">
-                    <img id="image" src="../../media/in-page-images/index-about-gallery.png" alt="Artgallery">
+                    <img id="image" src="../media/in-page-images/index-about-gallery.png" alt="Artgallery">
                 </div>
 
                 <div class="text">
@@ -116,7 +116,7 @@
                 </p>
             </div>
 
-            <a href="/html/login.html">
+            <a href="../html/login.html">
                 <div class="getstarted">
                     <p>Get Started!</p>
                 </div>
