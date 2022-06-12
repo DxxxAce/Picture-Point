@@ -7,8 +7,8 @@
     <title>404</title>
 
     <link rel="icon" type="image/x-icon" href="../media/Logos/final/pptext.svg"/>
-    <link rel="stylesheet" href="../css/404.css"/>
-    <link rel="stylesheet" href="../css/navbar.css"/>
+    <link rel="stylesheet" href="../../css/404.css"/>
+    <link rel="stylesheet" href="../../css/navbar.css"/>
 
     <meta charset="UTF-8"/>
     <meta name="author" content="Claudiu Strimbei"/>
@@ -36,7 +36,7 @@
 
         <div id="logo" class="button">
             <a href="/Web-Project/Web/php/public/index.php">
-                <img id="logo-icon" class="bicon" src="../media/Logos/final/pptext.svg" alt="Logo">
+                <img id="logo-icon" class="bicon" src="../../media/Logos/final/pptext.svg" alt="Logo">
             </a>
         </div>
 
@@ -45,7 +45,7 @@
         <div id="main-buttons">
             <div id="login" class="button">
                 <a href="/Web-Project/Web/php/public/index.php/login">
-                    <img class="bicon" src="../media/in-page-images/login.svg" alt="Login">
+                    <img class="bicon" src="../../media/in-page-images/login.svg" alt="Login">
                 </a>
             </div>
 
@@ -53,7 +53,7 @@
 
             <div id="home" class="button">
                 <a href="index.html">
-                    <img class="bicon" src="../media/in-page-images/home.svg" alt="Home">
+                    <img class="bicon" src="../../media/in-page-images/home.svg" alt="Home">
                 </a>
             </div>
 
@@ -61,7 +61,7 @@
 
             <div id="settings" class="button">
                 <a href="settings.html">
-                    <img class="bicon" src="../media/in-page-images/settings.svg" alt="Settings">
+                    <img class="bicon" src="../../media/in-page-images/settings.svg" alt="Settings">
                 </a>
             </div>
         </div>
@@ -70,7 +70,7 @@
 
         <div id="info" class="button">
             <a href="/Web-Project/Web/php/public/index.php/information">
-                <img class="bicon" src="../media/in-page-images/info.svg" alt="About">
+                <img class="bicon" src="../../media/in-page-images/info.svg" alt="About">
             </a>
         </div>
     </nav>
