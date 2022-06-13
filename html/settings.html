@@ -1,131 +1,105 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="../css/settings.css" />
-    <title>Picture Point - settings</title>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Palie Razvan" />
-    <meta name="description" content="Settings" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="..\media\Logos\final\pptext.svg"
-    />
-  </head>
-  <body>
-    <div id="container">
-      <div id="menu">
-        <a href="index.html">
-          <img class="bicon" src="..\media\Logos\final\pptext.svg"  alt=""/>
-        </a>
+    <head>
+        <title>Settings</title>
+    
+        <link rel="icon" type="image/x-icon" href="../media/Logos/final/pptext.svg"/>
+        <link rel="stylesheet" href="../css/settings.css"/>
+        <link rel="stylesheet" href="../css/navbar.css"/>
+    
+        <meta charset="UTF-8" />
+        <meta name="author" content="Palie Razvan" />
+        <meta name="description" content="Settings Page" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    
+    <body>
+        <div id="container">
+            <nav id="menubar">
+                <div id="dropdown" class="button">
+                    <button id="dropbtn">
+                        <img id="menu-icon" src="../media/in-page-images/dropdown.svg" alt="Menu">
+                    </button>
 
-        <div class="empty"></div>
+                    <div id="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="login.html">Connect</a>
+                        <a href="settings.html">Settings</a>
+                        <a href="information.html">About</a>
+                    </div>
+                </div>
 
-        <div id="menu-buttons">
-          <a href="index.html">
-            <img class="bicon" src="..\media\in-page-images\logout.svg"  alt=""/>
-          </a>
+                <div id="empty"></div>
 
-          <div class="menu-empty"></div>
+                <div id="logo" class="button">
+                    <a href="index.html">
+                        <img id="logo-icon" class="bicon" src="../media/Logos/final/pptext.svg" alt="Logo">
+                    </a>
+                </div>
 
-          <a href="index.html">
-            <img class="bicon" src="..\media\in-page-images\home.svg"  alt=""/>
-          </a>
+                <div class="empty"></div>
 
-          <div class="menu-empty"></div>
+                <div id="main-buttons">
+                    <div id="login" class="button">
+                        <a href="login.html">
+                            <img class="bicon" src="../media/in-page-images/login.png" alt="Login">
+                        </a>
+                    </div>
 
-          <a href="login.html">
-            <img class="bicon" src="..\media\in-page-images\settings.svg"  alt=""/>
-          </a>
-        </div>
+                    <div class="main-empty"></div>
 
-        <div class="empty"></div>
+                    <div id="home" class="button">
+                        <a href="index.html">
+                            <img class="bicon" src="../media/in-page-images/home.svg" alt="Home">
+                        </a>
+                    </div>
 
-        <a href="information.html">
-          <img class="bicon" src="..\media\in-page-images\info.svg"  alt=""/>
-        </a>
-      </div>
-      <div id="main">
-        <div id="inner1">
-          <div id="settings">Settings</div>
-        </div>
-        <div id="inner2">
-          <div id="inner-left">
-            <div id="username"><a href="">Change username</a></div>
-            <div id="email"><a href="">Change email</a></div>
-            <div id="password"><a href="">Change password</a></div>
-          </div>
-          <div id="inner-right">
-            <div id="platforms">
-              <p>Linked Platforms:</p>
-              <a href="https://www.facebook.com/"
-                ><img
-                  src="../media/in-page-images/facebook.png"
-                  class="plat-icon"
-               alt=""/></a>
-              <a href="https://www.instagram.com/"
-                ><img
-                  src="../media/in-page-images/instagram.png"
-                  class="plat-icon"
-               alt=""/></a>
-              <a href="https://www.twitter.com/"
-                ><img
-                  src="../media/in-page-images/twitter-b.png"
-                  class="plat-icon"
-               alt=""/></a>
-              <a href="https://www.reddit.com"
-                ><img
-                  src="../media/in-page-images/reddit.png"
-                  class="plat-icon"
-               alt=""/></a>
+                    <div class="main-empty"></div>
+
+                    <div id="settings" class="button">
+                        <a href="settings.html">
+                            <img class="bicon" src="../media/in-page-images/settings.svg" alt="Settings">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="empty"></div>
+
+                <div id="info" class="button">
+                    <a href="information.html">
+                        <img class="bicon" src="../media/in-page-images/info.svg" alt="About">
+                    </a>
+                </div>
+            </nav>
+
+            <div id="main">
+                <div id="settings-container">
+                    <div id="title">
+                        <p>Settings</p>
+                    </div>
+
+                    <div id="buttons">
+                        <div id="left">
+                            <a class="change" href="">Change Username</a>
+
+                            <a class="change" href="">Change Email</a>
+                            
+                            <a class="change" href="">Change Password</a>
+                        </div>
+
+                        <div id="right">
+                            <div id="platforms-container">
+                                <p>Your Platforms</p>
+
+                                <div id="platforms">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="delete-acc">Delete Account</div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div id="container-mobile">
-      <div id="menumobile">
-        <div id="iconmenu">
-          <img src="..\media\in-page-images\dropdown.svg"  alt=""/>
-        </div>
-        <div id="logomobile">
-          <a href="index.html">
-            <img class="bicon" src="..\media\Logos\final\pptext.svg"  alt=""/>
-          </a>
-        </div>
-      </div>
-      <div id="mainmobile">
-        <div id="settings-mobile">Settings</div>
-        <div id="username-mobile">Change Username</div>
-        <div id="email-mobile">Change Email</div>
-        <div id="password-mobile">Change password</div>
-        <div id="platforms-mobile">
-          <p>Linked Platforms:</p>
-          <a href="https://www.facebook.com/"
-            ><img
-              src="../media/in-page-images/facebook.png"
-              class="plat-icon-mobile"
-           alt=""/></a>
-          <a href="https://www.instagram.com/"
-            ><img
-              src="../media/in-page-images/instagram.png"
-              class="plat-icon-mobile"
-           alt=""/></a>
-          <a href="https://www.twitter.com/"
-            ><img
-              src="../media/in-page-images/twitter-b.png"
-              class="plat-icon-mobile"
-           alt=""/></a>
-          <a href="https://www.reddit.com"
-            ><img
-              src="../media/in-page-images/reddit.png"
-              class="plat-icon-mobile"
-           alt=""/></a>
-        </div>
-        <div id="delete-mobile">Delete Account</div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
