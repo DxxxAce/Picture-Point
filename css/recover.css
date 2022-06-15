@@ -146,7 +146,8 @@
   }
 
   #square {
-    height: 60vh;
+    max-height: 80vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,6 +173,7 @@
     font-size: larger;
     display: flex;
     flex-direction: row;
+    transform: translateY(1vh);
   }
 
   #text-input {
