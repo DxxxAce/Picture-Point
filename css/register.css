@@ -184,7 +184,6 @@
     color: #172a3a;
     fill-opacity: 30%;
     font-size: large;
-    border: none;
     border: 0.15vw solid #000;
     border-radius: 20px;
   }
@@ -207,6 +206,12 @@ input[type="text"]:hover,
 input[type="email"]:hover,
 input[type="password"]:hover {
   border-color: #fdb833;
+}
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="password"]:invalid {
+  border-color: #d70b0b;
 }
 
 input[type="submit"]:hover {

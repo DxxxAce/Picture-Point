@@ -68,4 +68,9 @@ abstract class Model
             self::RULE_MAX => 'Max length of this field must be {max}',
         ];
     }
+
+    public function getFirstError($attribute)
+    {
+        return $this->errors[$attribute][0] ?? '';
+    }
 }

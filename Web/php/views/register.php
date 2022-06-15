@@ -87,16 +87,15 @@
                     <h2>Sign up now:</h2>
                 </div>
 
-                <form action="" method="post">
-                    <div id="text-input">
-                        <input type="text" placeholder="Username" name="username">
-                        <input type="email" placeholder="Email" name="email">
-                        <input type="password" placeholder="Password" name="pass">
-                        <input type="password" placeholder="Confirm Password" name="confirmPass">
-                    </div>
-
-                    <input type="submit" value="Register">
-                </form>
+                <?php  $form=\app\core\form\Form::begin('',"post") ?>
+                <div id="text-input">
+                    <?php echo $form->field($model,'username')?>
+                    <?php echo $form->field($model,'email')?>
+                    <?php echo $form->field($model,'pass')?>
+                    <?php echo $form->field($model,'confirmPass')?>
+                <input type="submit" value="Register">
+                </div>
+                <?php \app\core\form\Form::end() ?>
 
                 <a id="link" href="/Web-Project/Web/php/public/index.php/login">Back</a>
             </div>
