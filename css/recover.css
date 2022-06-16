@@ -2,6 +2,8 @@
   html,
   body {
     background-color: #172a3a;
+    background-image: url("../media/in-page-images/bg-pattern.png");
+    background-repeat: repeat;
     margin: 0;
     height: 100vh;
     width: 100vw;
@@ -106,6 +108,8 @@
   html,
   body {
     background-color: #172a3a;
+    background-image: url("../media/in-page-images/bg-pattern.png");
+    background-repeat: repeat;
     margin: 0;
     height: 100vh;
     width: 100vw;

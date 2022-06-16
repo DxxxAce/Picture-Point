@@ -2,6 +2,8 @@
   html,
   body {
     background-color: #172a3a;
+    background-image: url("../media/in-page-images/bg-pattern.png");
+    background-repeat: repeat;
     margin: 0;
     height: 100vh;
     width: 100vw;
@@ -66,13 +68,15 @@
     border-radius: 10px;
     margin: 1rem;
     cursor: pointer;
-  }  
+  }
 }
 
 @media only screen and (max-width: 950px) {
   html,
   body {
     background-color: #172a3a;
+    background-image: url("../media/in-page-images/bg-pattern.png");
+    background-repeat: repeat;
     margin: 0;
     height: 100vh;
     width: 100vw;
@@ -101,7 +105,7 @@
     color: #fff;
     font-size: 5vh;
     max-height: 10vh;
-    transform: translateY(-3vh)
+    transform: translateY(-3vh);
   }
 
   #button-container {
@@ -136,7 +140,7 @@
     box-shadow: 0.35em 0.35em #10212c;
     border-radius: 10px;
     margin: 0.5rem;
-  }  
+  }
 }
 
 #button-container button:hover {
@@ -148,4 +152,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+#image-container img {
+  transition: transform 0.5s;
+}
+
+#image-container img:hover {
+  transform: scale(1.25, 1.25);
 }

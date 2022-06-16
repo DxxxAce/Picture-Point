@@ -34,6 +34,8 @@
   }
 
   #text-container {
+    background-image: url("../media/in-page-images/bg-pattern.png");
+    background-repeat: repeat;
     width: 100vw;
     background-color: #172a3a;
     border-top: 0.2vw outset #000;
@@ -89,6 +91,8 @@
   html,
   body {
     background-color: #172a3a;
+    background-image: url("../media/in-page-images/bg-pattern.png");
+    background-repeat: repeat;
     margin: 0;
     height: 100vh;
     width: 100vw;
@@ -114,7 +118,6 @@
 
   #text-container {
     width: 100vw;
-    background-color: #172a3a;
   }
 
   #text-container,
