@@ -12,7 +12,7 @@
 
 </form>
 <div>
-    <?php
+    <?php //imi afiseaza toate pozele din directorul $dirname (usernameul e hardcodat momentan, in aplicatie nu va fi) intr-un div nou
     $username = "claudiu";
     echo $username;
     $dirname = 'uploads/'.$username;
