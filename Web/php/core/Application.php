@@ -66,6 +66,11 @@ class Application
         $this->session->set('user',$primaryValue);
         return true;
     }
+
+    public function recover()
+    {
+        echo 'Check your email address';
+    }
     public function logout()
     {
         $this->user=null;
