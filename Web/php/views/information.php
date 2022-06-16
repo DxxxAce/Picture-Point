@@ -24,22 +24,27 @@
             </button>
 
             <div id="dropdown-content">
-                <a href="index.html">Home</a>
+                <a href="/Web-Project/Web/php/public/index.php">Home</a>
 
-                <a href="login.html">Connect</a>
+                <?php if(\app\core\Application::isGuest()):
+                    echo '<a href="/Web-Project/Web/php/public/index.php/login">Connect</a>';
+                else:
+                    echo '<a href="/Web-Project/Web/php/public/index.php/logout">Logout</a>';
+                endif;
+                ?>
 
-                <a href="gallery.html">Gallery</a>
+                <a href="/Web-Project/Web/php/public/index.php/gallery">Gallery</a>
 
-                <a href="settings.html">Settings</a>
+                <a href="/Web-Project/Web/php/public/index.php/settings">Settings</a>
 
-                <a href="information.html">About</a>
+                <a href="/Web-Project/Web/php/public/index.php/information">About</a>
             </div>
         </div>
 
         <div id="empty"></div>
 
         <div id="logo" class="button">
-            <a href="index.html">
+            <a href="/Web-Project/Web/php/public/index.php">
                 <img id="logo-icon" class="bicon" src="../../media/Logos/final/pptext.svg" alt="Logo">
             </a>
         </div>
@@ -47,16 +52,24 @@
         <div class="empty"></div>
 
         <div id="main-buttons">
-            <div id="login" class="button">
-                <a href="login.html">
+            <?php if(\app\core\Application::isGuest()):
+                echo '<div id="login" class="button">
+                <a href="/Web-Project/Web/php/public/index.php/login">
                     <img class="bicon" src="../../media/in-page-images/login.svg" alt="Login">
                 </a>
-            </div>
+            </div>';
+            else: echo '<div id="login" class="button">
+                <a href="/Web-Project/Web/php/public/index.php/logout">
+                    <img class="bicon" src="../../media/in-page-images/logout.svg" alt="Logout">
+                </a>
+            </div>';
+            endif;
+            ?>
 
             <div class="main-empty"></div>
 
             <div id="home" class="button">
-                <a href="index.html">
+                <a href="/Web-Project/Web/php/public/index.php">
                     <img class="bicon" src="../../media/in-page-images/home.svg" alt="Home">
                 </a>
             </div>
@@ -64,7 +77,7 @@
             <div class="main-empty"></div>
 
             <div id="gallery" class="button">
-                <a href="gallery.html">
+                <a href="/Web-Project/Web/php/public/index.php/gallery">
                     <img class="bicon" src="../../media/in-page-images/gallery.svg" alt="Gallery">
                 </a>
             </div>
@@ -72,7 +85,7 @@
             <div class="main-empty"></div>
 
             <div id="settings" class="button">
-                <a href="settings.html">
+                <a href="/Web-Project/Web/php/public/index.php/settings">
                     <img class="bicon" src="../../media/in-page-images/settings.svg" alt="Settings">
                 </a>
             </div>
@@ -81,7 +94,7 @@
         <div class="empty"></div>
 
         <div id="info" class="button">
-            <a href="information.html">
+            <a href="/Web-Project/Web/php/public/index.php/information">
                 <img class="bicon" src="../../media/in-page-images/info.svg" alt="About">
             </a>
         </div>
