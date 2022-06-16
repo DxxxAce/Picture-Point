@@ -1,19 +1,146 @@
 <?php
 ?>
-<form action="" method="post">
-    <div class="mb-3">
-        <label>Subject</label>
-        <input type="text" name = "subject">
-    </div>
-    <div class="mb-3">
-        <label>Email</label>
-        <input type="text" name = "email" >
-    </div>
-    <div class="mb-3">
-        <label>Body</label>
-        <textarea name = "body" class="form-control"></textarea>
-    </div>
-    <button type="submit">Submit</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Us</title>
 
+    <link rel="icon" type="image/x-icon" href="../../media/Logos/final/pptext.svg"/>
+    <link rel="stylesheet" href="../../css/information.css"/>
+    <link rel="stylesheet" href="../../css/navbar.css"/>
+
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Claudiu Strimbei"/>
+    <meta name="description" content="About Page"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+<div id="container">
+    <nav id="menubar">
+        <div id="dropdown" class="button">
+            <button id="dropbtn">
+                <img id="menu-icon" src="../../media/in-page-images/dropdown.svg" alt="Menu">
+            </button>
+
+            <div id="dropdown-content">
+                <a href="index.html">Home</a>
+
+                <a href="login.html">Connect</a>
+
+                <a href="gallery.html">Gallery</a>
+
+                <a href="settings.html">Settings</a>
+
+                <a href="information.html">About</a>
+            </div>
+        </div>
+
+        <div id="empty"></div>
+
+        <div id="logo" class="button">
+            <a href="index.html">
+                <img id="logo-icon" class="bicon" src="../../media/Logos/final/pptext.svg" alt="Logo">
+            </a>
+        </div>
+
+        <div class="empty"></div>
+
+        <div id="main-buttons">
+            <div id="login" class="button">
+                <a href="login.html">
+                    <img class="bicon" src="../../media/in-page-images/login.svg" alt="Login">
+                </a>
+            </div>
+
+            <div class="main-empty"></div>
+
+            <div id="home" class="button">
+                <a href="index.html">
+                    <img class="bicon" src="../../media/in-page-images/home.svg" alt="Home">
+                </a>
+            </div>
+
+            <div class="main-empty"></div>
+
+            <div id="gallery" class="button">
+                <a href="gallery.html">
+                    <img class="bicon" src="../../media/in-page-images/gallery.svg" alt="Gallery">
+                </a>
+            </div>
+
+            <div class="main-empty"></div>
+
+            <div id="settings" class="button">
+                <a href="settings.html">
+                    <img class="bicon" src="../../media/in-page-images/settings.svg" alt="Settings">
+                </a>
+            </div>
+        </div>
+
+        <div class="empty"></div>
+
+        <div id="info" class="button">
+            <a href="information.html">
+                <img class="bicon" src="../../media/in-page-images/info.svg" alt="About">
+            </a>
+        </div>
+    </nav>
+
+    <div id="main">
+        <div id="text-container">
+            <div id="title">
+                <p>About Us</p>
+            </div>
+
+            <div id="text">
+                <p>
+                    We're a team of junior developers, currently in our second year of studies at the
+                    <a href="https://www.info.uaic.ro/">Faculty of Computer Science of Iasi</a>.
+                </p>
+
+                <p>
+                    Our goal was to develop an aggregator type web application, based on our proffessor's
+                    <a href="https://profs.info.uaic.ro/~vcosmin/proiectetw">M-PIC project</a> suggestion.
+                </p>
+
+                <p>
+                    This app is meant for various people who wish to gather all of their pictures into a single place,
+                    for ease of access and better manageability.
+                </p>
+
+                <p>
+                    Users can import pictures from social media platforms, view statistics, edit them and create collages,
+                    or even upload new media files from a local source.
+                </p>
+            </div>
+
+            <div id="subtitle">
+                <p>The Team</p>
+            </div>
+
+            <div id="team-pics">
+                <div class="team">
+                    <img class="img" src="../../media/in-page-images/alin.png" alt="Alin">
+
+                    <p>Alin Hirtopanu</p>
+                </div>
+
+                <div class="team">
+                    <img class="img" src="../../media/in-page-images/claudiu.png" alt="Claudiu">
+
+                    <p>Claudiu Strimbei</p>
+                </div>
+
+                <div class="team">
+                    <img class="img" src="../../media/in-page-images/razvan.png" alt="Razvan">
+
+                    <p>Razvan Palie</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
 

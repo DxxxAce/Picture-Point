@@ -6,9 +6,9 @@ use PDO;
 class Database
 {
     public PDO $pdo;
-   /* public array $config = ["dsn"=>"mysql:host=localhost;port=3306;dbname=pales;charset=utf8",
-        "user"=>"pales",
-        "pass"=>"4563"];*/
+    /*public array $config = ["dsn"=>"mysql:host=localhost;port=3306;dbname=web;charset=utf8",
+        "user"=>"clodel",
+        "pass"=>"claudiu001"];*/
     public function __construct(array $config)
     {
         $dsn = $config['dsn'] ;
