@@ -44,4 +44,9 @@ class User extends DbModel
     {
         return ['username',"email","pass","status"];
     }
+
+    public function primaryKey(): string
+    {
+        return 'id';
+    }
 }

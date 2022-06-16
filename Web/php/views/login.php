@@ -1,5 +1,6 @@
 <?php
 /** @var $model \app\models\User*/
+
 ?>
 <!DOCTYPE html>
 
@@ -91,7 +92,7 @@
 
                     <?php  $form=\app\core\form\Form::begin('',"post") ?>
                         <div id="text-input">
-                            <?php echo $form->field($model,'username')?>
+                            <?php echo $form->field($model,'email')?>
                             <?php echo $form->field($model,'pass')?>
                         </div>
 
@@ -101,6 +102,16 @@
                         </div>
 
                         <input type="submit" value="Login">
+                    <div class="invalid-feedback">
+                        <?php if(strcmp($model->getFirstError('username'),'')!=0)
+                            echo $model->getFirstError('username').PHP_EOL ?>
+                        <?php if(strcmp($model->getFirstError('email'),'')!=0)
+                            echo 'Email:'.$model->getFirstError('email').PHP_EOL ?>
+                        <?php if(strcmp($model->getFirstError('pass'),'')!=0)
+                            echo 'Password:'.$model->getFirstError('pass').PHP_EOL ?>
+                        <?php  if(strcmp($model->getFirstError('confirmPass'),'')!=0)
+                            echo 'Password:'.$model->getFirstError('confirmPass').PHP_EOL ?>
+                    </div>
                     <?php \app\core\form\Form::end() ?>
 
                     <div id="links">

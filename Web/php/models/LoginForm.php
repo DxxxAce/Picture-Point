@@ -7,8 +7,8 @@ use app\core\Model;
 
 class LoginForm extends Model
 {
-    public string $email;
-    public string $pass;
+    public string $email='';
+    public string $pass='';
 
     public function rules(): array
     {
@@ -20,7 +20,7 @@ class LoginForm extends Model
 
     public function login()
     {
-        $user = User::findOne(['email'=>$this->email]);
+        $user = (new User)->findOne(['email'=>$this->email]);
         if(!$user){
             $this->addError('email','User does not exist with this email.');
             return false;
