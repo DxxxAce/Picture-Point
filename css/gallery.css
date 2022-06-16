@@ -84,20 +84,45 @@
     margin-top: 10vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     z-index: 0;
   }
 
   #title {
     color: #fff;
-    font-size: 8.8vw;
-    margin-bottom: 8vw;
+    font-size: 5vh;
+    max-height: 10vh;
+    transform: translateY(-3vh)
+  }
+
+  #button-container {
+    max-height: 12vh;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #button-container button {
+    background-color: #698996;
+    border: 5vh;
+    border-radius: 30px;
+    min-width: 18%;
+    color: #fff;
+    font-size: 65%;
+    box-shadow: 0.35em 0.35em #10212c;
+    cursor: pointer;
+  }
+
+  #image-container {
+    min-height: 55vh;
+    width: 100%;
+    padding: 0.8%;
   }
 }
 
-#button-container button:hover,
-#button-container button.select:focus {
+#button-container button:hover {
   color: #7c3626;
   background-color: #fdb833;
 }
