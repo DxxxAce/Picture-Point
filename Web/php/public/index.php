@@ -16,5 +16,5 @@ $app->router->post('/Web-Project/Web/php/public/index.php/login',[AuthController
 $app->router->get('/Web-Project/Web/php/public/index.php/register',[AuthController::class,'register']);
 $app->router->post('/Web-Project/Web/php/public/index.php/register',[AuthController::class,'register']);
 $app->router->get('/Web-Project/Web/php/public/index.php/gallery',[SiteController::class,'gallery']);
-
+$app->router->post('/Web-Project/Web/php/public/index.php/recover',[AuthController::class,'recover'])
 $app->run();
