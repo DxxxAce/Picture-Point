@@ -1,4 +1,5 @@
 <?php
+/** @var $model \app\models\User*/
 ?>
 <!DOCTYPE html>
 
