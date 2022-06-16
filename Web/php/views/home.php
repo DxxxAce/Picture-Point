@@ -1,4 +1,5 @@
 <?php
+use app\core\Application;
 ?>
 <!DOCTYPE html>
 
@@ -79,6 +80,9 @@
         <div id="text-container">
             <div id="title">
                 <p>Welcome to Picture Point!</p>
+                <?php if(Application::$app->session->getFlash('success'))
+                    echo "<p>".Application::$app->session->getFlash('success')."</p>"
+                    ?>
             </div>
 
             <div class="text">

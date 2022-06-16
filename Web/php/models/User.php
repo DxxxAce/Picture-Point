@@ -7,10 +7,15 @@ use app\core\Model;
 
 class User extends DbModel
 {
-public string $username='';
-public string $email='';
-public string $pass='';
-public string $confirmPass='';
+    const STATUS_INACTIVE = 0;
+    const STATUS_ACTIVE = 1;
+    const STATUS_DELETED= 2;
+
+    public string $username='';
+    public string $email='';
+    public string $pass='';
+    public int $status = self::STATUS_INACTIVE;
+    public string $confirmPass='';
 
     public function tableName():string
     {
@@ -19,6 +24,7 @@ public string $confirmPass='';
 
     public function save()
     {
+        $this->status = self::STATUS_INACTIVE;
         $this->pass = password_hash($this->pass, PASSWORD_DEFAULT);
         return parent::save();
     }
@@ -26,7 +32,9 @@ public string $confirmPass='';
     {
        return[
            'username'=> [self::RULE_REQUIRED],
-           'email'=> [self::RULE_REQUIRED,self::RULE_EMAIL],
+           'email'=> [self::RULE_REQUIRED,self::RULE_EMAIL, [
+               self::RULE_UNIQUE,'class' =>self::class
+               ]],
            'pass'=> [self::RULE_REQUIRED,[self::RULE_MIN,'min'=>8],[self::RULE_MAX,'max'=>24]],
            'confirmPass'=> [self::RULE_REQUIRED,[self::RULE_MATCH,'match'=>'pass']],
        ];
@@ -34,6 +42,6 @@ public string $confirmPass='';
 
     public function attributes(): array
     {
-        return ['username',"email","pass"];
+        return ['username',"email","pass","status"];
     }
 }
