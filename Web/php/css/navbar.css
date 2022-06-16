@@ -1,4 +1,4 @@
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 950px) {
   #menubar {
     background-color: #698996;
     position: fixed;
@@ -57,7 +57,7 @@
   }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   #menubar {
     background-color: #698996;
     position: fixed;
