@@ -1,11 +1,12 @@
 <?php
 namespace app\core;
 use app\core\Config;
+use app\models\User;
 
 class Application
 {
     public Router $router;
-    public string $userClass;
+    public User $userClass;
     public Request $request;
     public Session $session;
     public Response $response;
@@ -16,7 +17,7 @@ class Application
     public ?DbModel $user;
     public function __construct($rootPath, array $config)
     {
-        $this->userClass = $config['userClass'];
+        $this->userClass = new $config['userClass'];
         self::$ROOT_DIR = $rootPath;
         self::$app=$this;
         $this->request = new Request();
@@ -28,8 +29,8 @@ class Application
         $primaryValue = $this->session->get('user');
 
         if($primaryValue){
-            $primaryKey = $this->userClass::primaryKey();
-            $this->user=$this->userClass::findOne([$primaryKey=>$primaryValue ]);
+            $primaryKey = $this->userClass->primaryKey();
+            $this->user= $this->userClass->findOne([$primaryKey=>$primaryValue ]);
         } else{
             $this->user = null;
         }
