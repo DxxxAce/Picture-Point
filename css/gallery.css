@@ -58,6 +58,15 @@
     transform: translateX(5vh);
     padding: 0.8%;
   }
+
+  #image-container img {
+    max-height: 50%;
+    max-width: 50%;
+    box-shadow: 0.35em 0.35em #10212c;
+    border-radius: 10px;
+    margin: 1rem;
+    cursor: pointer;
+  }  
 }
 
 @media only screen and (max-width: 950px) {
@@ -120,9 +129,23 @@
     width: 100%;
     padding: 0.8%;
   }
+
+  #image-container img {
+    max-height: 60%;
+    max-width: 60%;
+    box-shadow: 0.35em 0.35em #10212c;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }  
 }
 
 #button-container button:hover {
   color: #7c3626;
   background-color: #fdb833;
+}
+
+#image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
