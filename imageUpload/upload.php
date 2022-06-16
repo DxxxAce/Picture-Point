@@ -36,4 +36,5 @@ if (isset($_POST['submit'])){
     } else{
         echo "You cannot upload this filetype!";
     }
+
 }

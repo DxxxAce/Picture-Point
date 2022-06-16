@@ -11,5 +11,18 @@
     <button type="submit" name="submit">UPLOAD</button>
 
 </form>
+<div>
+    <?php
+    $username = "claudiu";
+    echo $username;
+    $dirname = 'uploads/'.$username;
+    chdir($dirname);
+    $files = glob("*.{jpg,jpeg,png}", GLOB_BRACE );
+    chdir($dirname);
+    foreach($files as $image) {
+        ?> <img src="<?php echo $dirname. '/' . $image ?>" style="height: 200px; width: 200px;"/>
+    <?php } ?>
+</div>
+
 </body>
 </html>
