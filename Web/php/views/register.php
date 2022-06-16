@@ -94,6 +94,16 @@
                     <?php echo $form->field($model,'pass')?>
                     <?php echo $form->field($model,'confirmPass')?>
                 <input type="submit" value="Register">
+                    <div class="invalid-feedback">
+                        <?php if(strcmp($model->getFirstError('username'),'')!=0)
+                                echo $model->getFirstError('username').PHP_EOL ?>
+                        <?php if(strcmp($model->getFirstError('email'),'')!=0)
+                                echo 'Email:'.$model->getFirstError('email').PHP_EOL ?>
+                        <?php if(strcmp($model->getFirstError('pass'),'')!=0)
+                                echo 'Password:'.$model->getFirstError('pass').PHP_EOL ?>
+                        <?php  if(strcmp($model->getFirstError('confirmPass'),'')!=0)
+                        echo 'Password:'.$model->getFirstError('confirmPass').PHP_EOL ?>
+                    </div>
                 </div>
                 <?php \app\core\form\Form::end() ?>
 

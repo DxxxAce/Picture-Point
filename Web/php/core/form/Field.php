@@ -23,15 +23,15 @@ class Field
             ', $this->attribute);
       } else if(strcmp($this->attribute,'email')==0){
           return sprintf('
-         <input type="text" placeholder="Email" name="%s" required >
+         <input type="email" placeholder="Email" name="%s" required >
             ', $this->attribute);
       }else if(strcmp($this->attribute,'pass')==0){
           return sprintf('
-         <input type="text" placeholder="Password" name="%s" required >
+         <input type="password" placeholder="Password" name="%s" required >
             ', $this->attribute);
       }else if(strcmp($this->attribute,'confirmPass')==0){
           return sprintf('
-         <input type="text" placeholder="Confirm Password" name="%s" required >
+         <input type="password" placeholder="Confirm Password" name="%s" required >
             ', $this->attribute);
       }
       return sprintf('

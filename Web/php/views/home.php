@@ -52,7 +52,7 @@
             <div class="main-empty"></div>
 
             <div id="home" class="button">
-                <a href="index.html">
+                <a href="/Web-Project/Web/php/public/index.php">
                     <img class="bicon" src="../media/in-page-images/home.svg" alt="Home">
                 </a>
             </div>
