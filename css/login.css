@@ -205,6 +205,7 @@
   input[type="password"] {
     margin: 2%;
     padding: 5%;
+    max-width: 90%;
     color: #172a3a;
     fill-opacity: 30%;
     font-size: large;
