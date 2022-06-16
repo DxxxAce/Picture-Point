@@ -1,4 +1,5 @@
 <?php
+/** @var $model \app\models\User*/
 ?>
 <!DOCTYPE html>
 
@@ -28,7 +29,7 @@
                 <a href="/Web-Project/Web/php/public/index.php">Home</a>
                 <a href="/Web-Project/Web/php/public/index.php/login">Connect</a>
                 <a href="settings.html">Settings</a>
-                <a href="information.html">About</a>
+                <a href="/Web-Project/Web/php/public/index.php/information">About</a>
             </div>
         </div>
 
@@ -69,7 +70,7 @@
         <div class="empty"></div>
 
         <div id="info" class="button">
-            <a href="information.html">
+            <a href="/Web-Project/Web/php/public/index.php/information">
                 <img class="bicon" src="../../media/in-page-images/info.svg" alt="About">
             </a>
         </div>
@@ -88,10 +89,10 @@
                         <h2>Connect now:</h2>
                     </div>
 
-                    <form action="" method="">
+                    <?php  $form=\app\core\form\Form::begin('',"post") ?>
                         <div id="text-input">
-                            <input type="text" placeholder="Username">
-                            <input type="password" placeholder="Password">
+                            <?php echo $form->field($model,'username')?>
+                            <?php echo $form->field($model,'pass')?>
                         </div>
 
                         <div id="checkbox">
@@ -100,7 +101,7 @@
                         </div>
 
                         <input type="submit" value="Login">
-                    </form>
+                    <?php \app\core\form\Form::end() ?>
 
                     <div id="links">
                         <a class="link" href="recover.html">Forgot your password?</a>
