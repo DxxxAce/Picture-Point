@@ -18,6 +18,9 @@ class SiteController extends Controller
     {
       return $this->render('information');
     }
+   public function gallery(){
+        return $this->render('gallery');
+   }
     public function handleContact(Request $request)
     {
         $body=$request->getBody();

@@ -28,7 +28,12 @@ use app\core\Application;
 
             <div id="dropdown-content">
                 <a href="/Web-Project/Web/php/public/index.php">Home</a>
-                <a href="/Web-Project/Web/php/public/index.php/login">Connect</a>
+                <?php if(\app\core\Application::isGuest()):
+                    echo '<a href="/Web-Project/Web/php/public/index.php/login">Connect</a>';
+                else:
+                    echo '<a href="/Web-Project/Web/php/public/index.php/logout">Logout</a>';
+                endif;
+                ?>
                 <a href="settings.html">Settings</a>
                 <a href="/Web-Project/Web/php/public/index.php/information">About</a>
             </div>
@@ -45,11 +50,19 @@ use app\core\Application;
         <div class="empty"></div>
 
         <div id="main-buttons">
-            <div id="login" class="button">
+            <?php if(\app\core\Application::isGuest()):
+                echo '<div id="login" class="button">
                 <a href="/Web-Project/Web/php/public/index.php/login">
                     <img class="bicon" src="../media/in-page-images/login.svg" alt="Login">
                 </a>
-            </div>
+            </div>';
+            else: echo '<div id="login" class="button">
+                <a href="/Web-Project/Web/php/public/index.php/logout >
+                    <img class="bicon" src="../../media/in-page-images/logout.svg" alt="Logout">
+                </a>
+                </div>';
+            endif;
+            ?>
 
             <div class="main-empty"></div>
 
@@ -93,10 +106,19 @@ use app\core\Application;
 
                 <p>Then this is where our app comes in to help you!</p>
             </div>
-
+            <?php
+            if(\app\core\Application::isGuest()):
+            echo '
             <a class="text-button" href="/Web-Project/Web/php/public/index.php/login">
                 <p>Get Started</p>
-            </a>
+            </a>';
+            else:
+            echo '<a
+                class="text-button" href="/Web-Project/Web/php/public/index.php/gallery">
+                <p>Get Started</p>
+            </a>';
+            endif;
+            ?>
 
             <div class="text">
                 <p>With Picture Point, you can gather all of your photos in one place.</p>

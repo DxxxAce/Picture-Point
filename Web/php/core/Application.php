@@ -37,6 +37,11 @@ class Application
 
     }
 
+    public static function isGuest()
+    {
+        return !self::$app->user;
+    }
+
     public function run()
     {
       echo  $this->router->resolve();
@@ -61,9 +66,15 @@ class Application
         $this->session->set('user',$primaryValue);
         return true;
     }
+
+    public function recover()
+    {
+        echo 'Check your email address';
+    }
     public function logout()
     {
         $this->user=null;
         $this->session->remove('user');
     }
+
 }

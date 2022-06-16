@@ -28,7 +28,12 @@
 
             <div id="dropdown-content">
                 <a href="/Web-Project/Web/php/public/index.php">Home</a>
-                <a href="/Web-Project/Web/php/public/index.php/login">Connect</a>
+                <?php if(\app\core\Application::isGuest()):
+                    echo '<a href="/Web-Project/Web/php/public/index.php/login">Connect</a>';
+                else:
+                echo '<a href="/Web-Project/Web/php/public/index.php/logout">Logout</a>';
+                endif;
+                ?>
                 <a href="settings.html">Settings</a>
                 <a href="/Web-Project/Web/php/public/index.php/information">About</a>
             </div>
@@ -45,12 +50,19 @@
         <div class="empty"></div>
 
         <div id="main-buttons">
-            <div id="login" class="button">
+            <?php if(\app\core\Application::isGuest()):
+            echo '<div id="login" class="button">
                 <a href="/Web-Project/Web/php/public/index.php/login">
                     <img class="bicon" src="../../media/in-page-images/login.svg" alt="Login">
                 </a>
-            </div>
-
+            </div>';
+            else: echo '<div id="login" class="button">
+                <a href="/Web-Project/Web/php/public/index.php/logout">
+                    <img class="bicon" src="../../media/in-page-images/logout.svg" alt="Logout">
+                </a>
+            </div>';
+            endif;
+            ?>
             <div class="main-empty"></div>
 
             <div id="home" class="button">

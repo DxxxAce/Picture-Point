@@ -91,7 +91,12 @@
     <div id="main">
         <div id="text-container">
             <div class="text">
-                <p>404 : Not found!</p>
+                <p><?php echo "Goodbye ";
+                    echo 'You will be disconnected in 5 seconds.';
+
+                    \app\core\Application::$app->logout();
+                    header('Location:/Web-Project/Web/php/public/index.php');
+                ?></p>
             </div>
         </div>
     </div>
