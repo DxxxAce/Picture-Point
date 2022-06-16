@@ -7,6 +7,7 @@ use app\core\Controller;
 use app\core\Request;
 use app\core\Response;
 use app\models\LoginForm;
+use app\models\RecoverForm;
 use app\models\User;
 
 class AuthController extends Controller
@@ -52,8 +53,20 @@ class AuthController extends Controller
         ]);
     }
     public function recover(Request $request,Response $response){
-        Application::$app->recover();
-        $response->redirect("/Web-Project/Web/php/public/index.php");
+        $recover = new RecoverForm();
+        if($request->isPost()){
+            $recover->loadData($request->getBody());
+            if($recover->validate()){
+                Application::$app->recover();
+                $response->redirect("/Web-Project/Web/php/public/index.php");
+                return;
+            }
+
+
+            return $this->render('recover',[
+                'model' => $recover
+            ]);
+        }
     }
     public function logout(Request $request,Response $response)
     {

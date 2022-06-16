@@ -67,9 +67,9 @@ class Application
         return true;
     }
 
-    public function recover()
+    public function recover($string)
     {
-        echo 'Check your email address';
+
     }
     public function logout()
     {

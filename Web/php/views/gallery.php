@@ -11,16 +11,13 @@
         <link rel="stylesheet" href="../../css/navbar.css"/>
 
         <meta charset="UTF-8" />
+        <script src="../jsscripts/openForm.js"></script>
         <meta name="author" content="Palie Razvan" />
         <meta name="description" content="Gallery Page" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
 
-        <script>
-            function fullwindowpopup(){
-            window.open("home.php","bfs","fullscreen,scrollbars")
-        }
-    </script>
+
 
     <body>
         <div id="container">
@@ -125,11 +122,31 @@
                         <p>From Unsplash</p>
                     </button>
 
-                    <button id="upload" >
+                    <button id="upload" onclick="openForm()">
                         <p>Upload Picture</p>
                     </button>
                 </div>
+                <div class="form-popup" id="popUPForm">
+                    <form action="/action_page.php" class="form-container">
+                        <h1>Upload</h1>
 
+                        <form action="upload.php" method="post" enctype="multipart/form-data">
+                            <input type="file" name="file">
+                            <input type="username" name="username">
+
+                        <button type="submit" class="btn">Upload</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+                <script>
+                    function openForm() {
+                        document.getElementById("popUPForm").style.display = "block";
+                    }
+
+                    function closeForm() {
+                        document.getElementById("popUPForm").style.display = "none";
+                    }
+                </script>
                 <div id="image-container">
                    <?php
 
