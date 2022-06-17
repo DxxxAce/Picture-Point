@@ -11,5 +11,7 @@
             "email": "goth929@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "unsplash/unsplash": "^3.2"
+    }
 }

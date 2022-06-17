@@ -1,304 +1,226 @@
-@media only screen and (min-width: 600px) {
-  #menumobile {
-    display: none;
-  }
-
-  #container-mobile {
-    display: none;
-  }
-
+@media only screen and (min-width: 950px) {
   html,
   body {
-    margin: 0;
-    height: 100%;
-    width: 100%;
     background-color: #172a3a;
+    background-image: url("../media/in-page-images/bg-pattern.png");
+    background-repeat: repeat;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: #fff;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: row;
   }
 
   #main {
-    background-color: #698996;
-    text-align: justify;
-    border-radius: 25px;
-    padding: 20px;
-    flex: auto;
-  }
-
-  #menu-buttons {
-    height: 35vh;
+    height: 100vh;
+    width: 100vw;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-  }
-
-  .bicon {
-    width: 7.5vh;
-  }
-
-  #menu {
-    background-color: #698996;
-    text-align: justify;
-    width: 10vh;
-    height: 100%;
-    border-right: 0.2vw outset #172a3a;
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    overflow-x: hidden;
+    z-index: 0;
+  }
+
+  #settings-container {
+    margin: 0.5vw;
+    background-color: #698996;
+    box-shadow: 0.5em 0.5em #10212c;
+    border-radius: 10px;
+    max-height: 80vw;
+    min-height: 40vw;
+    width: 70vw;
+    display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    font-size: 4.5vh;
+    transform: translateX(5vh);
+    z-index: 1;
   }
 
-  .menu-empty {
-    height: 3vh;
-  }
-
-  #inner1 {
-    float: left;
+  #title {
+    color: #fff;
+    font-size: 6vh;
     height: 20%;
-    width: 100%;
   }
 
-  #inner2 {
-    float: left;
-    clear: left;
-    background-color: aliceblue;
+  #buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
     height: 80%;
-    width: 100%;
-    display: flex;
   }
 
-  #inner-left {
-    background-color: #698996;
-    width: 50%;
-  }
-
-  #inner-right {
-    background-color: #698996;
-    width: 50%;
-  }
-
-  #delete-acc {
-    background-color: #b12929;
-    text-align: center;
-    height: 5%;
-    width: 70%;
-    border-radius: 25px;
-    padding: 20px;
-    margin: 0 auto;
-    margin-right: 8vh;
-    color: #ffff;
-    font-size: 200%;
-  }
-
-  .plat-icon {
-    width: 10vh;
-    margin-top: 5vh;
-    margin-left: 3vh;
-    margin-right: 3vh;
-  }
-
-  a {
-    text-decoration: none;
-    color: #ffff;
-  }
-
-  #platforms {
-    background-color: #4f656f;
-    height: 50%;
-    width: 70%;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    margin-left: 15vh;
-    border-radius: 25px;
-    padding: 20px;
-    text-align: center;
-    color: #ffff;
-    font-size: 180%;
-  }
-
-  #username {
-    background-color: #4f656f;
-    text-align: center;
-    color: #ffff;
-    text-decoration: none;
-    font-size: 180%;
-    margin: 5vh;
-    border-radius: 25px;
-    padding: 20px;
-  }
-
-  #password {
-    background-color: #4f656f;
-    text-align: center;
-    color: #ffff;
-    text-decoration: none;
-    font-size: 180%;
-    margin: 5vh;
-    border-radius: 25px;
-    padding: 20px;
-  }
-
-  #email {
-    background-color: #4f656f;
-    text-align: center;
-    color: #ffff;
-    text-decoration: none;
-    font-size: 180%;
-    margin: 5vh;
-    border-radius: 25px;
-    padding: 20px;
-  }
-
-  #settings {
-    text-align: center;
-    background-color: #fdb833;
-    height: 20%;
-    width: 10%;
-    border-radius: 25px;
-    padding: 20px;
-    margin: 0 auto;
-    color: #7c3626;
-    font-size: 200%;
-  }
-
-  #container {
-    display: flex;
+  #left,
+  #right {
     height: 100%;
-    width: 100%;
+    width: 50%;
+    display: flex;
+  }
+
+  #left {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #left a {
+    width: 75%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4f656f;
+    padding: 3%;
+    border-radius: 30px;
+    box-shadow: 0.15em 0.15em #10212c;
+  }
+
+  #right {
+    justify-content: center;
+  }
+
+  #platforms-container {
+    width: 75%;
+    height: 85%;
+    margin: 6.5% 0;
+    text-align: center;
+    background-color: #4f656f;
+    border-radius: 30px;
+    box-shadow: 0.15em 0.15em #10212c;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 950px) {
   html,
   body {
-    margin: 0;
-    height: 100%;
-    width: 100%;
     background-color: #172a3a;
+    background-image: url("../media/in-page-images/bg-pattern.png");
+    background-repeat: repeat;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: #fff;
   }
 
   #container {
-    display: none;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vw;
   }
 
-  #container-mobile {
-    display: block;
+  #main {
+    height: 100vh;
+    width: 100vw;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+  }
+
+  #settings-container {
+    margin: 0.5vw;
+    background-color: #698996;
+    box-shadow: 0.5em 0.5em #10212c;
+    border-radius: 10px;
+    min-height: 80vh;
+    max-width: 50vh;
+    min-width: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3vh;
+    z-index: 1;
+  }
+
+  #title {
+    color: #fff;
+    font-size: 4.5vh;
+    height: 20%;
+  }
+
+  #buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 80%;
+  }
+
+  #left,
+  #right {
     height: 100%;
     width: 100%;
-    background-color: #172a3a;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  }
-
-  #menumobile {
-    background-color: #698996;
-    width: 100%;
-    height: 10%;
-    border-bottom: 0.2vw outset #172a3a;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
   }
 
-  .bicon {
-    width: 10vh;
+  #left {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
 
-  #logomobile {
-    float: right;
-    margin-top: 1vh;
-    margin-right: 2vw;
-  }
-
-  #iconmenu {
-    float: left;
-    margin-top: 1vh;
-    margin-left: 2vw;
-    width: 5vw;
-  }
-
-  #mainmobile {
-    background-color: #698996;
-    height: 100%;
-    width: 90%;
-    border-radius: 25px;
-    padding: 20px;
-  }
-
-  #settings-mobile {
-    width: 30%;
-    background-color: #fdb833;
-    border-radius: 25px;
-    padding: 20px;
+  #left a {
+    width: 80%;
+    margin: 1% 0;
     text-align: center;
-    margin: 0 auto;
-    margin-bottom: 3vh;
-    color: #7c3626;
-    font-size: 120%;
-    font-weight: bold;
-  }
-
-  #username-mobile {
+    text-decoration: none;
+    color: #fff;
     background-color: #4f656f;
-    border-radius: 25px;
-    padding: 20px;
-    font-size: 150%;
-    color: #ffff;
-    text-align: center;
-    margin-bottom: 3vh;
-    font-weight: bold;
+    padding: 3%;
+    border-radius: 30px;
+    box-shadow: 0.15em 0.15em #10212c;
   }
 
-  #email-mobile {
+  #right {
+    justify-content: center;
+  }
+
+  #platforms-container {
+    width: 85%;
+    max-height: 75%;
+    height: 85%;
+    margin: 5% 0;
+    text-align: center;
     background-color: #4f656f;
-    border-radius: 25px;
-    padding: 20px;
-    font-size: 150%;
-    color: #ffff;
-    text-align: center;
-    margin-bottom: 3vh;
-    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0.15em 0.15em #10212c;
   }
+}
 
-  #password-mobile {
-    background-color: #4f656f;
-    border-radius: 25px;
-    padding: 20px;
-    font-size: 150%;
-    color: #ffff;
-    text-align: center;
-    margin-bottom: 3vh;
-    font-weight: bold;
-  }
+#left a:hover {
+  color: #7c3626;
+  background-color: #fdb833;
+}
 
-  #delete-mobile {
-    background-color: #b12929;
-    border-radius: 25px;
-    padding: 20px;
-    font-size: 150%;
-    color: #ffff;
-    text-align: center;
-    margin-bottom: 3vh;
-    font-weight: bold;
-  }
+#platforms {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  transform: translateY(10%);
+}
 
-  #platforms-mobile {
-    background-color: #4f656f;
-    border-radius: 25px;
-    padding: 20px;
-    font-size: 150%;
-    color: #ffff;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 3vh;
-    font-weight: bold;
-  }
+#platforms button {
+  background-color: transparent;
+  border: none;
+  width: 40%;
+  max-height: 80%;
+  font-size: 75%;
+  cursor: pointer;
+}
 
-  .plat-icon-mobile {
-    width: 5vh;
-    margin: 2vh;
-  }
+img.platform-logo {
+  width: 90%;
 }

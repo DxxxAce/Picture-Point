@@ -34,7 +34,7 @@ use app\core\Application;
                     echo '<a href="/Web-Project/Web/php/public/index.php/logout">Logout</a>';
                 endif;
                 ?>
-                <a href="settings.html">Settings</a>
+                <a href="/Web-Project/Web/php/public/index.php/settings">Settings</a>
                 <a href="/Web-Project/Web/php/public/index.php/information">About</a>
             </div>
         </div>
@@ -75,7 +75,7 @@ use app\core\Application;
             <div class="main-empty"></div>
 
             <div id="settings" class="button">
-                <a href="settings.html">
+                <a href="/Web-Project/Web/php/public/index.php/settings">
                     <img class="bicon" src="../media/in-page-images/settings.svg" alt="Settings">
                 </a>
             </div>

@@ -18,6 +18,11 @@ class SiteController extends Controller
     {
       return $this->render('information');
     }
+
+    public function settings()
+    {
+        return $this->render('settings');
+    }
    public function gallery(){
         return $this->render('gallery');
    }

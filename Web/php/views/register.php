@@ -29,7 +29,7 @@
             <div id="dropdown-content">
                 <a href="/Web-Project/Web/php/public/index.php">Home</a>
                 <a href="/Web-Project/Web/php/public/index.php/login">Connect</a>
-                <a href="settings.html">Settings</a>
+                <a href="/Web-Project/Web/php/public/index.php/settings">Settings</a>
                 <a href="/Web-Project/Web/php/public/index.php/information">About</a>
             </div>
         </div>
@@ -62,7 +62,7 @@
             <div class="main-empty"></div>
 
             <div id="settings" class="button">
-                <a href="settings.html">
+                <a href="/Web-Project/Web/php/public/index.php/settings">
                     <img class="bicon" src="../../media/in-page-images/settings.svg" alt="Settings">
                 </a>
             </div>

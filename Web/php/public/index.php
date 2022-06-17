@@ -24,4 +24,7 @@ $app->router->get('/Web-Project/Web/php/public/index.php/gallery',[SiteControlle
 
 $app->router->post('/Web-Project/Web/php/public/index.php/recover',[AuthController::class,'recover']);
 $app->router->get('/Web-Project/Web/php/public/index.php/recover',[AuthController::class,'recover']);
+
+$app->router->post('/Web-Project/Web/php/public/index.php/settings',[SiteController::class,'settings']);
+$app->router->get('/Web-Project/Web/php/public/index.php/settings',[SiteController::class,'settings']);
 $app->run();
