@@ -74,6 +74,22 @@ use app\core\Application;
 
             <div class="main-empty"></div>
 
+            <div class="main-empty"></div>
+
+            <?php if(\app\core\Application::isGuest()):
+                echo '<div id="gallery" class="button">
+                <a href="/Web-Project/Web/php/public/index.php/gallery">
+                    <img class="bicon" src="../media/in-page-images/gallery.svg" alt="Gallery">
+                </a>
+            </div>';
+            else: echo '<div id="gallery" class="button">
+            <a href="/Web-Project/Web/php/public/index.php/login">
+                <img class="bicon" src="../media/in-page-images/gallery.svg" alt="Gallery">
+            </a>
+        </div>';
+            endif;
+            ?>
+
             <div id="settings" class="button">
                 <a href="/Web-Project/Web/php/public/index.php/settings">
                     <img class="bicon" src="../media/in-page-images/settings.svg" alt="Settings">

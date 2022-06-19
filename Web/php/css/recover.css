@@ -1,7 +1,9 @@
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 950px) {
   html,
   body {
     background-color: #172a3a;
+    background-image: url("../media/in-page-images/bg-pattern.png");
+    background-repeat: repeat;
     margin: 0;
     height: 100vh;
     width: 100vw;
@@ -41,10 +43,17 @@
     width: 50vh;
   }
 
+  #square {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   #form {
-    background-color: #4f656f;
+    background-color: #698996;
     box-shadow: 0.5em 0.5em #10212c;
-    border-radius: 5%;
+    border-radius: 10px;
     align-self: center;
     vertical-align: middle;
     height: 100%;
@@ -70,7 +79,7 @@
     align-items: center;
   }
 
-  input[type="text"] {
+  input[type="email"] {
     margin: 2%;
     padding: 5%;
     color: #172a3a;
@@ -95,10 +104,12 @@
   }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   html,
   body {
     background-color: #172a3a;
+    background-image: url("../media/in-page-images/bg-pattern.png");
+    background-repeat: repeat;
     margin: 0;
     height: 100vh;
     width: 100vw;
@@ -138,13 +149,21 @@
     width: 5vw;
   }
 
+  #square {
+    max-height: 80vh;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   #form {
-    background-color: #4f656f;
+    background-color: #698996;
     box-shadow: 0.5em 0.5em #10212c;
-    border-radius: 5%;
+    border-radius: 10px;
     align-self: center;
     vertical-align: middle;
-    height: 40vh;
+    height: 100%;
     width: 90vw;
     display: flex;
     flex-direction: column;
@@ -158,6 +177,7 @@
     font-size: larger;
     display: flex;
     flex-direction: row;
+    transform: translateY(1vh);
   }
 
   #text-input {
@@ -167,7 +187,7 @@
     align-items: center;
   }
 
-  input[type="text"] {
+  input[type="email"] {
     margin: 2%;
     padding: 5%;
     color: #172a3a;
@@ -192,7 +212,7 @@
   }
 }
 
-input[type="text"]:hover {
+input[type="email"]:hover {
   border-color: #fdb833;
 }
 

@@ -1,7 +1,9 @@
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 950px) {
   html,
   body {
     background-color: #172a3a;
+    background-image: url("../media/in-page-images/bg-pattern.png");
+    background-repeat: repeat;
     margin: 0;
     height: 100vh;
     width: 100vw;
@@ -41,10 +43,17 @@
     width: 50vh;
   }
 
+  #square {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   #form {
-    background-color: #4f656f;
+    background-color: #698996;
     box-shadow: 0.5em 0.5em #10212c;
-    border-radius: 5%;
+    border-radius: 10px;
     align-self: center;
     vertical-align: middle;
     height: 100%;
@@ -70,7 +79,7 @@
     align-items: center;
   }
 
-  input[type="email"],
+  input[type="text"],
   input[type="password"] {
     margin: 2%;
     padding: 5%;
@@ -113,10 +122,12 @@
   }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   html,
   body {
     background-color: #172a3a;
+    background-image: url("../media/in-page-images/bg-pattern.png");
+    background-repeat: repeat;
     margin: 0;
     height: 100vh;
     width: 100vw;
@@ -131,7 +142,7 @@
   }
 
   #main {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -156,14 +167,23 @@
     width: 5vw;
   }
 
+  #square {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(4vh);
+  }
+
   #form {
-    background-color: #4f656f;
+    background-color: #698996;
     box-shadow: 0.5em 0.5em #10212c;
-    border-radius: 5%;
+    border-radius: 10px;
     align-self: center;
     vertical-align: middle;
-    height: 60vh;
-    width: 90vw;
+    height: 100%;
+    max-width: 90vw;
+    min-width: 75vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -185,10 +205,11 @@
     align-items: center;
   }
 
-  input[type="email"],
+  input[type="text"],
   input[type="password"] {
     margin: 2%;
     padding: 5%;
+    max-width: 90%;
     color: #172a3a;
     fill-opacity: 30%;
     font-size: large;
@@ -229,7 +250,7 @@
   }
 }
 
-input[type="email"]:hover,
+input[type="text"]:hover,
 input[type="password"]:hover {
   border-color: #fdb833;
 }
