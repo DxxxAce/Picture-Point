@@ -26,6 +26,11 @@ class SiteController extends Controller
    public function gallery(){
         return $this->render('gallery');
    }
+
+   public function upload(){
+        exec('../views/Upload.php');
+   }
+
     public function handleContact(Request $request)
     {
         $body=$request->getBody();

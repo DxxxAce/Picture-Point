@@ -26,7 +26,7 @@ if (isset($_POST['submit'])){
                 mkdir('uploads/'.$username); //ii creez pe username un director
                 $fileDestination = 'uploads/'.$username.'/'.$fileNameNew; //adaug poza in directoru userului care face upload
                 move_uploaded_file($fileTmpName, $fileDestination);
-                header("Location: index.php?uploadsuccess");
+                header("Location: ../Web/php/public/index.php/gallery");
             } else{
                 echo "The file is too big to be uploaded!";
             }
