@@ -17,7 +17,7 @@
 
 <body>
 <div id="container">
-    <nav id="menubar">
+<nav id="menubar">
         <div id="dropdown" class="button">
             <button id="dropbtn">
                 <img id="menu-icon" src="../../media/in-page-images/dropdown.svg" alt="Menu">
@@ -25,18 +25,14 @@
 
             <div id="dropdown-content">
                 <a href="/Web-Project/Web/php/public/index.php">Home</a>
-
                 <?php if(\app\core\Application::isGuest()):
-                    echo '<a href="/Web-Project/Web/php/public/index.php/login">Connect</a>';
+                    echo '<a href="/Web-Project/Web/php/public/index.php/login">Login</a>';
                 else:
                     echo '<a href="/Web-Project/Web/php/public/index.php/logout">Logout</a>';
+                    echo '<a href="/Web-Project/Web/php/public/index.php/gallery">Gallery</a>';
                 endif;
                 ?>
-
-                <a href="/Web-Project/Web/php/public/index.php/gallery">Gallery</a>
-
                 <a href="/Web-Project/Web/php/public/index.php/settings">Settings</a>
-
                 <a href="/Web-Project/Web/php/public/index.php/information">About</a>
             </div>
         </div>
@@ -62,7 +58,7 @@
                 <a href="/Web-Project/Web/php/public/index.php/logout">
                     <img class="bicon" src="../../media/in-page-images/logout.svg" alt="Logout">
                 </a>
-            </div>';
+                </div>';
             endif;
             ?>
 
@@ -76,13 +72,19 @@
 
             <div class="main-empty"></div>
 
-            <div id="gallery" class="button">
-                <a href="/Web-Project/Web/php/public/index.php/gallery">
+            <?php if(\app\core\Application::isGuest()):
+                echo '<div id="gallery" class="button">
+                <a href="/Web-Project/Web/php/public/index.php/login">
                     <img class="bicon" src="../../media/in-page-images/gallery.svg" alt="Gallery">
                 </a>
-            </div>
-
-            <div class="main-empty"></div>
+            </div>';
+            else: echo '<div id="gallery" class="button">
+            <a href="/Web-Project/Web/php/public/index.php/gallery">
+                <img class="bicon" src="../../media/in-page-images/gallery.svg" alt="Gallery">
+            </a>
+        </div>';
+            endif;
+            ?>
 
             <div id="settings" class="button">
                 <a href="/Web-Project/Web/php/public/index.php/settings">

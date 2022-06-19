@@ -29,9 +29,10 @@
             <div id="dropdown-content">
                 <a href="/Web-Project/Web/php/public/index.php">Home</a>
                 <?php if(\app\core\Application::isGuest()):
-                    echo '<a href="/Web-Project/Web/php/public/index.php/login">Connect</a>';
+                    echo '<a href="/Web-Project/Web/php/public/index.php/login">Login</a>';
                 else:
-                echo '<a href="/Web-Project/Web/php/public/index.php/logout">Logout</a>';
+                    echo '<a href="/Web-Project/Web/php/public/index.php/logout">Logout</a>';
+                    echo '<a href="/Web-Project/Web/php/public/index.php/gallery">Gallery</a>';
                 endif;
                 ?>
                 <a href="/Web-Project/Web/php/public/index.php/settings">Settings</a>
@@ -51,7 +52,7 @@
 
         <div id="main-buttons">
             <?php if(\app\core\Application::isGuest()):
-            echo '<div id="login" class="button">
+                echo '<div id="login" class="button">
                 <a href="/Web-Project/Web/php/public/index.php/login">
                     <img class="bicon" src="../../media/in-page-images/login.svg" alt="Login">
                 </a>
@@ -60,9 +61,10 @@
                 <a href="/Web-Project/Web/php/public/index.php/logout">
                     <img class="bicon" src="../../media/in-page-images/logout.svg" alt="Logout">
                 </a>
-            </div>';
+                </div>';
             endif;
             ?>
+
             <div class="main-empty"></div>
 
             <div id="home" class="button">
@@ -72,6 +74,20 @@
             </div>
 
             <div class="main-empty"></div>
+
+            <?php if(\app\core\Application::isGuest()):
+                echo '<div id="gallery" class="button">
+                <a href="/Web-Project/Web/php/public/index.php/login">
+                    <img class="bicon" src="../../media/in-page-images/gallery.svg" alt="Gallery">
+                </a>
+            </div>';
+            else: echo '<div id="gallery" class="button">
+            <a href="/Web-Project/Web/php/public/index.php/gallery">
+                <img class="bicon" src="../../media/in-page-images/gallery.svg" alt="Gallery">
+            </a>
+        </div>';
+            endif;
+            ?>
 
             <div id="settings" class="button">
                 <a href="/Web-Project/Web/php/public/index.php/settings">
@@ -99,7 +115,7 @@
                 <div id="form">
                     <div id="prompt">
                         <img id="user-icon" src="../../media/in-page-images/user.svg" alt="Icon">
-                        <h2>Connect now:</h2>
+                        <h2>Connect now</h2>
                     </div>
 
                     <?php  $form=\app\core\form\Form::begin('',"post") ?>

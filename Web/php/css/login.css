@@ -79,7 +79,7 @@
     align-items: center;
   }
 
-  input[type="text"],
+  input[type="email"],
   input[type="password"] {
     margin: 2%;
     padding: 5%;
@@ -205,7 +205,7 @@
     align-items: center;
   }
 
-  input[type="text"],
+  input[type="email"],
   input[type="password"] {
     margin: 2%;
     padding: 5%;
@@ -250,7 +250,7 @@
   }
 }
 
-input[type="text"]:hover,
+input[type="email"]:hover,
 input[type="password"]:hover {
   border-color: #fdb833;
 }
