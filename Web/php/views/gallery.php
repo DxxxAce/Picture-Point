@@ -115,7 +115,7 @@ use app\core\Application;
                     echo "<p>".Application::$app->session->getFlash('error')."</p>"
                 ?>
                 <div id="button-container">
-                    <button class="query" id="selectAll" >
+                    <button class="query" id="selectAll">
                         <p>All Pictures</p>
                     </button>
 
@@ -127,7 +127,7 @@ use app\core\Application;
                         <p>From Unsplash</p>
                     </button>
 
-                    <button id="upload" onclick="openForm('popUPForm')">
+                    <button id="upload" onload="closeForm()" onclick="openForm('popUPForm')">
                         <p>Upload Picture</p>
                     </button>
                 </div>
@@ -141,16 +141,23 @@ use app\core\Application;
 
                         <button type="button" class="btn cancel" onclick="closeForm('popUPForm')">Close</button>
                     </form>
+                    <div class="form-popup" id="unspForm">
+                        <form action="../../../../imageUpload/downloadTwitter.php" method="post" class="form-container" enctype="multipart/form-data">
+                            <h1>Unsplash connect</h1>
+                            <input type="unspUsername" name="unspUsername" placeholder="Unsplash username">
+                            <input type="unspPass" name="unspPass" placeholder="Unsplash password">
+                            <button type="connectUnsplash" name="connectUnsplash">Log in and download pictures</button>
+                            <button type="button" class="btn cancel" onclick="closeForm('unspForm')">Close</button>
+                        </form>
                     <div class="form-popup" id="twitterForm">
-                        <form action="" method="post" class="form-container" enctype="multipart/form-data">
+                        <form action="../../../../imageUpload/downloadUnsplash.php" method="post" class="form-container" enctype="multipart/form-data">
                             <h1>Twitter connect</h1>
+                            <input type="twitterUser" name="twitterUser" placeholder="Twitter username">
+                            <input type="twitterPass" name="twitterPass" placeholder="Twitter password">
+                            <button type="connectTwitter" name="connectTwitter">Log in and download pictures</button>
                             <button type="button" class="btn cancel" onclick="closeForm('twitterForm')">Close</button>
                         </form>
-                        <div class="form-popup" id="unspForm">
-                            <form action="" method="post" class="form-container" enctype="multipart/form-data">
-                            <h1>Unsplash connect</h1>
-                                <button type="button" class="btn cancel" onclick="closeForm('unspForm')">Close</button>
-                            </form>
+
                 </div>
                 <script>
                     function openForm(string) {

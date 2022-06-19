@@ -23,8 +23,10 @@ if (isset($_POST['submit'])){
         if($fileError === 0){ //verific daca nu am erori la upload
             if($fileSize<500000){ //verific daca filesize-ul e sub o anumita marime
                 $fileNameNew = uniqid('', true).".".$fileActualExt; //ii rescriu numele astfel incat sa nu isi ia override poze cu acelasi nume
-                mkdir('uploads/'.$username); //ii creez pe username un director
-                $fileDestination = 'uploads/'.$username.'/'.$fileNameNew; //adaug poza in directoru userului care face upload
+                mkdir('uploads/'.$username.'/'); //ii creez pe username un director
+                $tempdir = 'uploads/'.$username.'/';
+                mkdir($tempdir.'/local/');
+                $fileDestination = 'uploads/'.$username.'/local/'.$fileNameNew; //adaug poza in directoru userului care face upload
                 move_uploaded_file($fileTmpName, $fileDestination);
                 header("Location: ../Web/php/public/index.php/gallery");
             } else{
