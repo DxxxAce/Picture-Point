@@ -27,4 +27,7 @@ $app->router->get('/Web-Project/Web/php/public/index.php/recover',[AuthControlle
 
 $app->router->post('/Web-Project/Web/php/public/index.php/settings',[SiteController::class,'settings']);
 $app->router->get('/Web-Project/Web/php/public/index.php/settings',[SiteController::class,'settings']);
+
+$app->router->post('/Web-Project/Web/php/public/Upload.php',[SiteController::class,'upload']);
+
 $app->run();
