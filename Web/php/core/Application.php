@@ -71,10 +71,15 @@ class Application
     {
 
     }
+
     public function logout()
     {
         $this->user=null;
         $this->session->remove('user');
+        if (isset($_COOKIE['PHPSESSID'])) {
+            unset($_COOKIE['PHPSESSID']);
+            setcookie('PHPSESSID', '', time() - 3600, '/');
+        }
     }
 
 }
