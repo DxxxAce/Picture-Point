@@ -130,8 +130,8 @@
                 </p>
 
                 <p>
-                    You can access our application's documentation page by clicking
-                    <a href="../../Documentation/documentation.html">here</a>.
+                    Here you can access our app's <a href="../../Documentation/documentation.html" target="_blank">documentation</a> or a short
+                    <a href="https://www.youtube.com/watch?v=Bk8LI9CIOkk" target="_blank">presentation video</a> to catch a glimpse of how it works.
                 </p>
             </div>
 
