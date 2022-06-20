@@ -1,5 +1,7 @@
 <?php
+;
 use app\core\Application;
+use app\core\Unsplash;
 ?>
 <!DOCTYPE html>
 
@@ -142,15 +144,17 @@ use app\core\Application;
                         <button type="button" class="btn cancel" onclick="closeForm('popUPForm')">Close</button>
                     </form>
                     <div class="form-popup" id="unspForm">
-                        <form action="../../../../imageUpload/downloadTwitter.php" method="post" class="form-container" enctype="multipart/form-data">
+                        <form action="../core/Unsplash.php" method="post" class="form-container" enctype="multipart/form-data">
                             <h1>Unsplash connect</h1>
                             <input type="unspUsername" name="unspUsername" placeholder="Unsplash username">
-                            <input type="unspPass" name="unspPass" placeholder="Unsplash password">
+                            <input type="pics" name="pics" placeholder="Number of pics">
                             <button type="connectUnsplash" name="connectUnsplash">Log in and download pictures</button>
                             <button type="button" class="btn cancel" onclick="closeForm('unspForm')">Close</button>
+                            <?php
+                            ?>
                         </form>
                     <div class="form-popup" id="twitterForm">
-                        <form action="../../../../imageUpload/downloadUnsplash.php" method="post" class="form-container" enctype="multipart/form-data">
+                        <form action="../../../../imageUpload/downloadTwitter.php" method="post" class="form-container" enctype="multipart/form-data">
                             <h1>Twitter connect</h1>
                             <input type="twitterUser" name="twitterUser" placeholder="Twitter username">
                             <input type="twitterPass" name="twitterPass" placeholder="Twitter password">
@@ -168,11 +172,10 @@ use app\core\Application;
                         document.getElementById(string.toString()).style.display = "none";
                     }
                 </script>
-                <div id="image-container">
-                   <?php
 
-                   ?>
-                </div>
+                        <div id="image-container">
+
+                        </div>
             </div>
         </div>
     </body>

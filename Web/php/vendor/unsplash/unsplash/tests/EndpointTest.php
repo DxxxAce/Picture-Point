@@ -2,7 +2,7 @@
 
 namespace Unsplash\Tests;
 
-use Unsplash;
+use \Unsplash;
 use VCR\VCR;
 
 /**

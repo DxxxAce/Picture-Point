@@ -2,7 +2,7 @@
 
 namespace Unsplash\Tests;
 
-use \Unsplash as Unsplash;
+use Unsplash as Unsplash;
 use \League\OAuth2\Client\Token\AccessToken;
 
 /**
