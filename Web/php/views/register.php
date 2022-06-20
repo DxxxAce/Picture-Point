@@ -8,7 +8,7 @@
 <head>
     <title>Register</title>
 
-    <link rel="icon" type="image/x-icon" href="../../media/Logos/final/pptext.svg">
+    <link rel="icon" type="image/x-icon" href="../media/Logos/final/pptext.svg">
     <link rel="stylesheet" href="../../css/register.css">
     <link rel="stylesheet" href="../../css/navbar.css">
 
