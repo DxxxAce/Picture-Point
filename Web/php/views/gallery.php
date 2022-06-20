@@ -161,30 +161,33 @@ use app\core\Unsplash;
 
             <div id="image-container">
                 <?php
-                    $username = $_COOKIE['unspuser'];
 
-                    $dir_path = "../views/unsphotos/".$username.'/';
-                    $final_path = "../".$dir_path;
-                    $extensions_array = array('jpg','png','jpeg');
+                    if(isset($_COOKIE['unspuser'])){
+                        $username = $_COOKIE['unspuser'];
 
-                    if(is_dir($dir_path))
-                    {
-                        $files = scandir($dir_path);
+                        $dir_path = "../views/unsphotos/".$username.'/';
+                        $final_path = "../".$dir_path;
+                        $extensions_array = array('jpg','png','jpeg');
 
-                        for($i = 0; $i < count($files); $i++)
+                        if(is_dir($dir_path))
                         {
-                            if($files[$i] !='.' && $files[$i] !='..')
+                            $files = scandir($dir_path);
+
+                            for($i = 0; $i < count($files); $i++)
                             {
-
-                                // get file extension
-                                $file = pathinfo($files[$i]);
-                                $extension = $file['extension'];
-
-                                // check file extension
-                                if(in_array($extension, $extensions_array))
+                                if($files[$i] !='.' && $files[$i] !='..')
                                 {
-                                    // show image
-                                    echo "<img class='img' src='$final_path$files[$i]' alt='Image'>";
+
+                                    // get file extension
+                                    $file = pathinfo($files[$i]);
+                                    $extension = $file['extension'];
+
+                                    // check file extension
+                                    if(in_array($extension, $extensions_array))
+                                    {
+                                        // show image
+                                        echo "<img class='img' src='$final_path$files[$i]' alt='Image'>";
+                                    }
                                 }
                             }
                         }
