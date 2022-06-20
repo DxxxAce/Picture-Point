@@ -54,6 +54,10 @@
     cursor: pointer;
   }
 
+  .form-popup {
+    transform: translateX(50vw);
+  }
+
   #image-container {
     min-height: 65vh;
     width: 94%;
@@ -62,8 +66,8 @@
   }
 
   #image-container img {
-    max-height: 50%;
-    max-width: 50%;
+    max-height: 25%;
+    max-width: 25%;
     box-shadow: 0.35em 0.35em #10212c;
     border-radius: 10px;
     margin: 1rem;
@@ -98,6 +102,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     z-index: 0;
   }
 
@@ -141,6 +146,13 @@
     border-radius: 10px;
     margin: 0.5rem;
   }
+}
+
+#popup-form {
+  display: flex;
+  align-self: center;
+  flex-wrap: nowrap;
+  justify-self: center;
 }
 
 #button-container button:hover {

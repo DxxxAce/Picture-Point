@@ -30,4 +30,6 @@ $app->router->get('/Web-Project/Web/php/public/index.php/settings',[SiteControll
 
 $app->router->post('/Web-Project/Web/php/public/Upload.php',[SiteController::class,'upload']);
 
+$app->router->post('/Web-Project/Web/php/public/Unsplash.php',[SiteController::class,'unsplash']);
+
 $app->run();

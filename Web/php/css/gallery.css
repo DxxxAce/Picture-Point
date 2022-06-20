@@ -135,8 +135,8 @@
   }
 
   #image-container img {
-    max-height: 60%;
-    max-width: 60%;
+    max-height: 35%;
+    max-width: 35%;
     box-shadow: 0.35em 0.35em #10212c;
     border-radius: 10px;
     margin: 0.5rem;

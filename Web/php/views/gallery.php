@@ -129,11 +129,11 @@ use app\core\Unsplash;
                         <p>From Unsplash</p>
                     </button>
 
-                    <button id="upload" onload="closeForm()" onclick="openForm('popUPForm')">
+                    <button id="upload" onload="closeForm()" onclick="openForm('popup-form')">
                         <p>Upload Picture</p>
                     </button>
                 </div>
-                <div class="form-popup" id="popUPForm">
+                <div class="form-popup" id="popup-form">
                     <form action="../../../../imageUpload/upload.php" method="post" class="form-container" enctype="multipart/form-data">
                         <h1>Upload</h1>
 
@@ -143,16 +143,17 @@ use app\core\Unsplash;
 
                         <button type="button" class="btn cancel" onclick="closeForm('popUPForm')">Close</button>
                     </form>
+                </div>
                     <div class="form-popup" id="unspForm">
-                        <form action="../../../imageUpload/Unsplash.php" method="post" class="form-container" enctype="multipart/form-data">
+                        <form action="../../../../imageUpload/Unsplash.php" method="post" class="form-container" enctype="multipart/form-data">
                             <h1>Unsplash connect</h1>
                             <input type="unspUsername" name="unspUsername" placeholder="Unsplash username">
-                            <input type="pics" name="pics" placeholder="Number of pics">
                             <button type="connectUnsplash" name="connectUnsplash">Log in and download pictures</button>
                             <button type="button" class="btn cancel" onclick="closeForm('unspForm')">Close</button>
                             <?php
                             ?>
                         </form>
+                    </div>
                     <div class="form-popup" id="twitterForm">
                         <form action="../../../../imageUpload/downloadTwitter.php" method="post" class="form-container" enctype="multipart/form-data">
                             <h1>Twitter connect</h1>
@@ -172,11 +173,40 @@ use app\core\Unsplash;
                         document.getElementById(string.toString()).style.display = "none";
                     }
                 </script>
+                    <div id="image-container">
+                        <?php
 
-                        <div id="image-container">
+                        $username = $_COOKIE['unspuser'];
 
-                        </div>
-            </div>
+                        $dir_path = "../views/unsphotos/".$username.'/';
+                        $final_path = "../".$dir_path;
+                        $extensions_array = array('jpg','png','jpeg');
+
+                        if(is_dir($dir_path))
+                        {
+                            $files = scandir($dir_path);
+
+                            for($i = 0; $i < count($files); $i++)
+                            {
+                                if($files[$i] !='.' && $files[$i] !='..')
+                                {
+
+                                    // get file extension
+                                    $file = pathinfo($files[$i]);
+                                    $extension = $file['extension'];
+
+                                    // check file extension
+                                    if(in_array($extension, $extensions_array))
+                                    {
+                                        // show image
+                                        echo "<img class='img' src='$final_path$files[$i]' ><br>";
+                                    }
+                                }
+                            }
+                        }
+
+                        ?>
+                    </div>
         </div>
     </body>
 </html>

@@ -5,6 +5,8 @@
 
            $username = $_POST['unspUsername'];
 
+           setcookie('unspuser', $username, time()+60*60*24*6004, '/', NULL, 0);
+
            $photocount = 10;
 
             $ch = curl_init();
@@ -28,36 +30,14 @@
 
             //print_r($resultcurl);
 
+            if(!file_exists('../Web/php/views/unsphotos/'.$username.'/')){
+                mkdir('../Web/php/views/unsphotos/'.$username.'/');
+            }
+
             foreach($resultcurl as $link){
-                $ch = curl_init($link);
-                mkdir('/Web-Project/imageUpload/uploads/'.$username);
-                $fp = fopen('/Web-Project/imageUpload/uploads/'.$username, 'wb');
-                curl_setopt($ch, CURLOPT_FILE, $fp);
-                curl_setopt($ch, CURLOPT_HEADER, 0);
-                curl_exec($ch);
-                curl_close($ch);
-    /*
-     $url = "https://api.unsplash.com/users/josephm82/photos";
+                $fileNameNew = uniqid('', true).".png";
+                $fileDestination = '../Web/php/views/unsphotos/'.$username.'/'.$fileNameNew;
+                file_put_contents($fileDestination, file_get_contents($link));
+            }
+            header("Location: ../Web/php/public/index.php/gallery");
 
-     $params = array(
-         'client_id'=> $apiAccess,
-         'per_page' => 3,
-         'orientation' => 'portrait',
-         'page' => 1
-     );
-
-     $curl = curl_init($url);
-     curl_setopt($curl, CURLOPT_POST, true);
-     curl_setopt($curl, CURLOPT_POSTFIELDS, $params);
-     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-     curl_setopt($curl, CURLOPT_PROXY_SSL_VERIFYPEER, false);
-     $result = curl_exec($curl);
-     curl_close($curl);
-
-     var_dump($result);*/
-
-
-
-//var_dump($manage);
-
-}

@@ -31,6 +31,10 @@ class SiteController extends Controller
         exec('../views/Upload.php');
    }
 
+    public function unsplash(){
+        exec('../views/Unsplash.php');
+    }
+
     public function handleContact(Request $request)
     {
         $body=$request->getBody();
