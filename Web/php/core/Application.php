@@ -79,6 +79,7 @@ class Application
         if (isset($_COOKIE['PHPSESSID'])) {
             unset($_COOKIE['PHPSESSID']);
             setcookie('PHPSESSID', '', time() - 3600, '/');
+            setcookie('unspuser', '', time() - 3600, '/');
         }
     }
 
