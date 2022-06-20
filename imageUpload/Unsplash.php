@@ -1,10 +1,5 @@
 <?php
-use app\core\Application;
 
-class Unsplash{
-
-    public function getPics()
-    {
             $apiAccess = "dD97ZNnvP8Ea0yhdP2hwfuY_19fYOo7GD7DWPlakgno";
             $apiSecret = "BuYoliikwTLPL8Y6tELrer5f9QeW-5r216Tn5AaQJSA";
 
@@ -41,17 +36,6 @@ class Unsplash{
                 curl_setopt($ch, CURLOPT_HEADER, 0);
                 curl_exec($ch);
                 curl_close($ch);
-                fclose($fp);
-    }
-
-        }
-
-
-
-
-
-
-
     /*
      $url = "https://api.unsplash.com/users/josephm82/photos";
 
