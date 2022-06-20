@@ -125,8 +125,13 @@
                 </p>
 
                 <p>
-                    Users can import pictures from social media platforms, view statistics, edit them and create collages,
+                    Users can import pictures from social media platforms, edit them,
                     or even upload new media files from a local source.
+                </p>
+
+                <p>
+                    You can access our application's documentation page by clicking
+                    <a href="../../Documentation/documentation.html">here</a>.
                 </p>
             </div>
 

@@ -49,6 +49,7 @@
     border: 5vh;
     border-radius: 30px;
     min-width: 18%;
+    min-height: 5vh;
     color: #fff;
     font-size: 2.5vh;
     box-shadow: 0.35em 0.35em #10212c;
@@ -124,8 +125,9 @@
     border: 5vh;
     border-radius: 30px;
     min-width: 18%;
+    min-height: 10vw;
     color: #fff;
-    font-size: 65%;
+    font-size: 80%;
     box-shadow: 0.35em 0.35em #10212c;
     cursor: pointer;
   }
@@ -143,6 +145,11 @@
     border-radius: 10px;
     margin: 0.5rem;
   }
+}
+
+input[type="submit"] {
+  height: 5vh;
+  margin-bottom: 2vh;
 }
 
 #button-container button:hover,
@@ -176,8 +183,7 @@ input[type="submit"]:hover {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  background-color: #000000e6;
   flex-direction: column;
   justify-content: center;
 }
@@ -202,18 +208,17 @@ input[type="submit"]:hover {
   height: 150px;
 }
 
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
+.modal-content,
+#caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-  from {transform: scale(0)}
-  to {transform: scale(1)}
+  from { transform: scale(0); }
+  to { transform: scale(1); }
 }
 
-/* The Close Button */
 .close {
   position: absolute;
   top: 15px;
@@ -239,13 +244,8 @@ input[type="submit"]:hover {
   margin-bottom: 50px;
 }
 
-input[type="submit"] {
-  height: 5vh;
-  margin-bottom: 2vh;
-}
-
 .filter {
   display: flex;
   align-self: start;
-  margin: 0.5vh 30vw
+  margin: 0.5vh 30vw;
 }

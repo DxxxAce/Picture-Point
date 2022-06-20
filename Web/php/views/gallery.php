@@ -117,21 +117,13 @@ use app\core\Unsplash;
                     echo "<p>".Application::$app->session->getFlash('error')."</p>"
                 ?>
                 <div id="button-container">
-                    <button class="query" id="selectAll">
-                        <p>All Pictures</p>
-                    </button>
+                    <button class="query" id="selectAll">All Pictures</button>
 
-                    <button class="query" id="selectFromTwitter" onclick="openForm('twitterForm')">
-                        <p>From Twitter</p>
-                    </button>
+                    <button class="query" id="selectFromTwitter" onclick="openForm('twitterForm')">From Twitter</button>
 
-                    <button class="query" id="selectFromUnsplash" onclick="openForm('unspForm')">
-                        <p>From Unsplash</p>
-                    </button>
+                    <button class="query" id="selectFromUnsplash" onclick="openForm('unspForm')">From Unsplash</button>
 
-                    <button id="upload" onload="closeForm()" onclick="openForm('popup-form')">
-                        <p>Upload Picture</p>
-                    </button>
+                    <button id="upload" onload="closeForm()" onclick="openForm('popup-form')">Upload Picture</button>
                 </div>
 
                 <div class="form-popup" id="popup-form">
@@ -244,7 +236,7 @@ use app\core\Unsplash;
                     </form>
 
                     <div id="canvas">
-                        <img class="modal-content" id="img01">
+                        <img class="modal-content" id="img01" src="#" alt="Selected Image">
 
                         <div id="caption"></div>
                     </div>
