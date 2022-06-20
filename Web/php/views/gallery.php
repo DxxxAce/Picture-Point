@@ -208,17 +208,17 @@ use app\core\Unsplash;
                         <input type="submit" id="save" value="Save">
 
                         <div class="filter">
-                            <input type="range" name="brightness" id="brightness" min="0" max="100" value="0" step="0.1">
+                            <input type="range" name="brightness" id="brightness" min="0" max="100" value="50" step="0.1">
                             <label for="brightness">Brightness</label>
                         </div>
                         
                         <div class="filter">
-                            <input type="range" name="contrast" id="contrast" min="0" max="100" value="0" step="0.1">
+                            <input type="range" name="contrast" id="contrast" min="0" max="100" value="50" step="0.1">
                             <label for="contrast">Contrast</label>
                         </div>
 
                         <div class="filter">
-                            <input type="range" name="saturation" id="saturation" min="0" max="100" value="0" step="0.1">
+                            <input type="range" name="saturation" id="saturation" min="0" max="100" value="50" step="0.1">
                             <label for="saturation">Saturation</label>
                         </div>
 
@@ -281,6 +281,77 @@ use app\core\Unsplash;
                     span.onclick = function() {
                         modal.style.display = "none";
                     }
+
+                    let brightness = 50;
+                    let contrast = 50;
+                    let saturation = 50;
+                    let gray = 0;
+                    let blur = 0;
+                    let opacity = 0;
+                    let sepia = 0;
+
+                    const image = document.getElmenentById("img01");
+
+                    const brightness_slider = document.getElementByID("brightness");
+                    const contrast_slider = document.getElementByID("contrast");
+                    const saturation_slider = document.getElementByID("saturation");
+                    const gray_slider = document.getElementByID("gray");
+                    const blur_slider = document.getElementByID("blur");
+                    const opacity_slider = document.getElementByID("opacity");
+                    const sepia_slider = document.getElementByID("sepia");
+
+                    function updateFilters() {
+                        image.style.filter =
+                        "brightness(" + brightness + "%)" +
+                        "contrast(" + contrast + "%)" +
+                        "saturation(" + saturation + "%)" +
+                        "gray(" + gray + "%)" +
+                        "blur(" + blur + "%)" +
+                        "opacity(" + opacity + "%)" +
+                        "sepia(" + sepia + "%)";
+                    }
+
+                    //Brightness slider
+                    brightness_slider.addEventListener("input", function() {
+                    brightness = brightness_slider.value;
+                    updateFilters();
+                    });
+                    
+                    //Contrast slider
+                    contrast_slider.addEventListener("input", function() {
+                    contrast = contrast_slider.value;
+                    updateFilters();
+                    });
+                    
+                    //Saturation slider
+                    saturation_slider.addEventListener("input", function() {
+                    saturation = saturation_slider.value;
+                    updateFilters();
+                    });
+                    
+                    //Grayscale slider
+                    gray_slider.addEventListener("input", function() {
+                    gray = gray_slider.value;
+                    updateFilters();
+                    });
+
+                    //Blur slider
+                    blur_slider.addEventListener("input", function() {
+                    blur = blur_slider.value;
+                    updateFilters();
+                    });
+                    
+                    //Opacity slider
+                    opacity_slider.addEventListener("input", function() {
+                    opacity = 100 - opacity_slider.value;
+                    updateFilters();
+                    });
+                    
+                    //Sepia slider
+                    sepia_slider.addEventListener("input", function() {
+                    sepia = sepia_slider.value;
+                    updateFilters();
+                    });
                 </script>
         </div>
     </body>
