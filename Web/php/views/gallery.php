@@ -144,7 +144,7 @@ use app\core\Unsplash;
                         <button type="button" class="btn cancel" onclick="closeForm('popUPForm')">Close</button>
                     </form>
                     <div class="form-popup" id="unspForm">
-                        <form action="../core/Unsplash.php" method="post" class="form-container" enctype="multipart/form-data">
+                        <form action="../../../imageUpload/Unsplash.php" method="post" class="form-container" enctype="multipart/form-data">
                             <h1>Unsplash connect</h1>
                             <input type="unspUsername" name="unspUsername" placeholder="Unsplash username">
                             <input type="pics" name="pics" placeholder="Number of pics">
