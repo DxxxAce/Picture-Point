@@ -3,6 +3,7 @@
 <html lang="en">
     <head>
         <title>Documentation</title>
+        <link rel="icon" type="image/x-icon" href="../media/Logos/final/pptext.svg"/>
 
         <meta charset="UTF-8">
         <meta name="author" content="Hirtopanu Alin">
@@ -130,7 +131,7 @@
 
                         <li typeof="schema:WebPage" role="doc-biblioentry" resource="https://wallpaperaccess.com/art-gallery" property="schema:citation">
                             <cite property="schema:name">
-                                <a href="https://wallpaperaccess.com/art-gallery" target="_blank">Home Page Art Gallery Picture Source</a>
+                                <a href="https://wallpaperaccess.com/art-gallery" target="_blank">Background Art Gallery Picture Source</a>
                             </cite>
                         </li>
                     </ol>
@@ -164,7 +165,7 @@
                     <ul>
                         <li>logo: redirects to the home page</li>
                         <li>
-                            menu: pulls out/in a sidebar menu containing the home, gallery, connect, disconnect,
+                            menu: pulls out/in a dropdown menu containing the home, gallery, connect, disconnect,
                             settings and info buttons (only available on a mobile device)
                         </li>
                         <li>connect: redirects to the login page (only available when not logged in)</li>
@@ -217,7 +218,22 @@
                         </li>
                     </ul>
 
-                    <p>Gallery Page - view, download and edit pictures</p>
+                    <p>Recover Page</p>
+
+                    <ul>
+                        <li>logo: redirects to the home page</li>
+                        <li>
+                            menu: pulls out/in a sidebar menu containing the home, gallery, connect, disconnect,
+                            settings and info buttons (only available on a mobile device)
+                        </li>
+                        <li>connect: redirects to the login page (only available when not logged in)</li>
+                        <li>disconnect: logs the user out of their account and redirects to home page (only available when logged in)</li>
+                        <li>home: redirects to the home page</li>
+                        <li>info: redirects to the information page</li>
+                        <li>recover: sends the user an email containing their lost password</li>
+                    </ul>
+
+                    <p>Gallery Page - view and edit pictures</p>
 
                     <ul>
                         <li>logo: redirects to the home page</li>
@@ -230,13 +246,11 @@
                         <li>home: redirects to the home page</li>
                         <li>info: redirects to the information page</li>
                         <li>platforms: select which social media platform to view pictures from</li>
-                        <li>link: connect to the selected social media platform to automatically import all pictures from it</li>
+                        <li>link: connect to the selected social media platform to import pictures from it</li>
                         <li>upload: quickly upload a picture that is stored locally</li>
                         <li>view: pop up a selected image to view it up close, along with any other data it comes with</li>
                         <li>minimize: exit view mode</li>
-                        <li>download: store the picture into a local space</li>
-                        <li>edit: crop, apply filters and text, create collages, etc.</li>
-                        <li>delete: erase selected picture from account</li>
+                        <li>edit: apply filters to picture</li>
                     </ul>
 
                     <p>Settings Page</p>
@@ -255,7 +269,6 @@
                         <li>change email: link new email to user</li>
                         <li>change password: link new password to user</li>
                         <li>link/unlink platform: connect to a new platform or disconnect from one</li>
-                        <li>delete account: removes user from database and redirects to home page</li>
                     </ul>
 
                     <p>Information Page - some brief details about the web application</p>
@@ -304,77 +317,42 @@
                     <div>
                         <figure typeof="sa:image">
                             <figcaption>Home Page</figcaption>
-                            <img src="../figma/home_page.png" alt="Home Page Screenshot" width="1000">
+                            <img src="../screenshots/home_page.png" alt="Home Page Screenshot" width="1000">
                         </figure>
     
                         <figure typeof="sa:image">
                             <figcaption>Login Page</figcaption>
-                            <img src="../figma/login_page.png" alt="Login Page Screenshot" width="1000">
+                            <img src="../screenshots/login_page.png" alt="Login Page Screenshot" width="1000">
                         </figure>
     
                         <figure typeof="sa:image">
                             <figcaption>Register Page</figcaption>
-                            <img src="../figma/register_page.png" alt="Register Page Screenshot" width="1000">
+                            <img src="../screenshots/register_page.png" alt="Register Page Screenshot" width="1000">
+                        </figure>
+
+                        <figure typeof="sa:image">
+                            <figcaption>Recover Page</figcaption>
+                            <img src="../screenshots/recover_page.png" alt="Recover Page Screenshot" width="1000">
                         </figure>
     
                         <figure typeof="sa:image">
                             <figcaption>Gallery Page</figcaption>
-                            <img src="../figma/gallery_upload_page.png" alt="Gallery Page Screenshot" width="1000">
+                            <img src="../screenshots/gallery_page.png" alt="Gallery Page Screenshot" width="1000">
                         </figure>
     
                         <figure typeof="sa:image">
                             <figcaption>Picture View Mode</figcaption>
-                            <img src="../figma/picture_view_mode.png" alt="Picture View Mode Screenshot" width="1000">
+                            <img src="../screenshots/picture_view_mode.png" alt="Picture View Mode Screenshot" width="1000">
                         </figure>
     
                         <figure typeof="sa:image">
                             <figcaption>Settings Page</figcaption>
-                            <img src="../figma/settings_page.png" alt="Settings Page Screenshot" width="1000">
+                            <img src="../screenshots/settings_page.png" alt="Settings Page Screenshot" width="1000">
                         </figure>
     
                         <figure typeof="sa:image">
                             <figcaption>Information Page</figcaption>
-                            <img src="../figma/information_page.png" alt="Information Page Screenshot" width="1000">
-                        </figure>
-
-                        <figure typeof="sa:image">
-                            <figcaption>Mobile Home Page</figcaption>
-                            <img src="../figma/mobile_home_page.png" alt="Mobile Home Page Screenshot" width="350">
-                        </figure>
-
-                        <figure typeof="sa:image">
-                            <figcaption>Mobile Sidebar Menu</figcaption>
-                            <img src="../figma/mobile_sidebar_menu.png" alt="Mobile Sidebar Menu Screenshot" width="350">
-                        </figure>
-    
-                        <figure typeof="sa:image">
-                            <figcaption>Mobile Login Page</figcaption>
-                            <img src="../figma/mobile_login_page.png" alt="Mobile Login Page Screenshot" width="350">
-                        </figure>
-    
-                        <figure typeof="sa:image">
-                            <figcaption>Mobile Register Page</figcaption>
-                            <img src="../figma/mobile_register_page.png" alt="Mobile Register Page Screenshot" width="350">
-                        </figure>
-    
-                        <figure typeof="sa:image">
-                            <figcaption>Mobile Gallery Page</figcaption>
-                            <img src="../figma/mobile_gallery_page.png" alt="Mobile Gallery Page Screenshot" width="350">
-                        </figure>
-    
-                        <figure typeof="sa:image">
-                            <figcaption>Mobile Picture View Mode</figcaption>
-                            <img src="../figma/mobile_picture_view_mode.png" alt="Mobile Picture View Mode Screenshot" width="350">
-                        </figure>
-    
-                        <figure typeof="sa:image">
-                            <figcaption>Mobile Settings Page</figcaption>
-                            <img src="../figma/mobile_settings_page.png" alt="Mobile Settings Page Screenshot" width="350">
-                        </figure>
-    
-                        <figure typeof="sa:image">
-                            <figcaption>Mobile Information Page</figcaption>
-                            <img src="../figma/mobile_information_page.png" alt="Mobile Information Page Screenshot" width="350">
+                            <img src="../screenshots/information_page.png" alt="Information Page Screenshot" width="1000">
                         </figure>
                     </div>
                 </section>
@@ -422,10 +400,7 @@
                 <section>
                     <h4>4.5 Settings Page</h4>
 
-                    <p>
-                        Users can change their username, email, or password, link new platforms or unlink the ones
-                        they are already connected to. They can also permanently delete their account.
-                    </p>
+                    <p>Users can change their username, email, password, or link their platforms to Picture Point.</p>
                 </section>
 
                 <section>
@@ -478,9 +453,14 @@
                     <ul>
                         <li>Overall Website Design Structure</li>
                         <li>Website Design Implementation</li>
+                        <li>Home Page</li>
                         <li>Login Page</li>
                         <li>Register Page</li>
-                        <li>Account Recovery Page</li>
+                        <li>Recovery Page</li>
+                        <li>Gallery Page</li>
+                        <li>Settings Page</li>
+                        <li>Information Page</li>
+                        <li>User Authentication Session</li>
                         <li>Documentation</li>
                     </ul>
                 </section>
@@ -489,9 +469,13 @@
                     <h4>P&#259;lie R&#259;zvan-Aviv</h4>
 
                     <ul>
+                        <li>Overall Website Design Structure</li>
                         <li>Website Design Implementation</li>
                         <li>Gallery Page</li>
                         <li>Settings Page</li>
+                        <li>The MVC Pattern</li>
+                        <li>User Authentication</li>
+                        <li>Local Source Upload</li>
                     </ul>
                 </section>
 
@@ -503,6 +487,9 @@
                         <li>Website Design Implementation</li>
                         <li>Home Page</li>
                         <li>Information Page</li>
+                        <li>The MVC Pattern</li>
+                        <li>Unsplash Link</li>
+                        <li>Presentation Video</li>
                     </ul>
                 </section>
             </section>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Documentation</title>
+        <link rel="icon" type="image/x-icon" href="../media/Logos/final/pptext.svg"/>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="Hirtopanu Alin">
+        <meta name="description" content="Documentation of the Picture Point web application.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body style="background-color: #64aac6;">
+        <article>
+            <header>
+                <h1>Picture Point</h1>
+            </header>
+    
+            <div role="contentinfo">
+                <section typeof="sa:AuthorsList">
+                    <h2>Authors</h2>
+
+                    <ul>
+                        <li typeof="sa:ContributorRole" property="schema:author">
+                            <span typeof="schema:Person">
+                                <meta property="schema:givenName" content="Alin">
+                                <meta property="schema:additionalName" content="Tudor">
+                                <meta property="schema:familyName" content="Hirtopanu">
+                                <span property="schema:name">H&#238;rtopanu Tudor-Alin</span>
+                            </span>
+
+                            <ul>
+                                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                                    <a href="mailto:tudor.hirtopanu@info.uaic.ro" property="schema:email">tudor.hirtopanu@info.uaic.ro</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li typeof="sa:ContributorRole" property="schema:author">
+                            <span typeof="schema:Person">
+                                <meta property="schema:givenName" content="Razvan">
+                                <meta property="schema:additionalName" content="Aviv">
+                                <meta property="schema:familyName" content="Palie">
+                                <span property="schema:name">P&#259;lie R&#259;zvan-Aviv</span>
+                            </span>
+
+                            <ul>
+                                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                                    <a href="mailto:razvan.palie@info.uaic.ro" property="schema:email">razvan.palie@info.uaic.ro</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li typeof="sa:ContributorRole" property="schema:author">
+                            <span typeof="schema:Person">
+                                <meta property="schema:givenName" content="Claudiu">
+                                <meta property="schema:additionalName" content="Catalin">
+                                <meta property="schema:familyName" content="Strimbei">
+                                <span property="schema:name">Str&#238;mbei Claudiu-C&#259;t&#259;lin</span>
+                            </span>
+
+                            <ul>
+                                <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                                    <a href="mailto:claudiu.strimbei@info.uaic.ro" property="schema:email">claudiu.strimbei@info.uaic.ro</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <section>
+                <h3>1. Introduction</h3>
+
+                <section>
+                    <h4>1.1 Purpose</h4>
+
+                    <p>
+                        The purpose of this document is to present a detailed description of the web application Picture Point,
+                        based on the project M-PIC. It will explain the purpose and features of the application, the interface
+                        of the software, what it will do and the constraints under which it must operate.
+                        This document is intended for any potential users of the software.
+                    </p>
+                </section>
+
+                <section>
+                    <h4>1.2 Document Conventions</h4>
+
+                    <p>This document was created based on the IEEE Template for System Requirement Specification Documents.</p>
+                </section>
+
+                <section>
+                    <h4>1.3 Intended Audience and Reading Suggestions</h4>
+
+                    <p>This document is intended for any user that might wish to use the Picture Point web application.</p>
+                </section>
+
+                <section>
+                    <h4>1.4 Product Scope</h4>
+
+                    <p>
+                        Picture Point has been developed for the purpose of gathering photos from across
+                        various social media platforms into one place, so that the user may access them easier.
+                    </p>
+                </section>
+
+                <section>
+                    <h4>1.5 References</h4>
+                    
+                    <ol>
+                        <li typeof="schema:WebPage" role="doc-biblioentry" resource="https://github.com/DxxxAce/Web-Project" property="schema:citation">
+                            <cite property="schema:name">
+                                <a href="https://github.com/DxxxAce/Web-Project" target="_blank">Picture Point's Github page</a>
+                            </cite>
+                        </li>
+
+                        <li typeof="schema:WebPage" role="doc-biblioentry" resource="https://github.com/rick4470/IEEE-SRS-Tempate#42-system-feature-2-and-so-on" property="schema:citation">
+                            <cite property="schema:name">
+                                <a href="https://github.com/rick4470/IEEE-SRS-Tempate#42-system-feature-2-and-so-on" target="_blank">
+                                    IEEE Template for System Requirements Specification Documents
+                                </a>
+                            </cite>
+                        </li>
+
+                        <li typeof="schema:WebPage" role="doc-biblioentry" resource="https://www.figma.com/" property="schema:citation">
+                            <cite property="schema:name">
+                                <a href="https://www.figma.com/" target="_blank">Figma: The Collaborative Interface Design Tool</a>
+                            </cite>
+                        </li>
+
+                        <li typeof="schema:WebPage" role="doc-biblioentry" resource="https://wallpaperaccess.com/art-gallery" property="schema:citation">
+                            <cite property="schema:name">
+                                <a href="https://wallpaperaccess.com/art-gallery" target="_blank">Background Art Gallery Picture Source</a>
+                            </cite>
+                        </li>
+                    </ol>
+                </section>
+            </section>
+
+            <section>
+                <h3>2. Overall Description</h3>
+
+                <section>
+                    <h3>2.1 Product Description</h3>
+
+                    <p>
+                        The Picture Point web application is based on the M-PIC project. It is an aggregator-type
+                        application meant for various people who wish to gather all of their pictures into a single
+                        place, for ease of access. Users can import pictures from social media platforms, view statistics,
+                        edit them and create collages, or even upload new media files from a local source.
+                    </p>
+                </section>
+
+                <section>
+                    <h4>2.2 Product Functions</h4>
+
+                    <p>
+                        The web application manages pictures. Pictures can be viewed, downloaded, edited, etc.
+                        They are imported together with data such as reactions and comments from the original platform.
+                    </p>
+
+                    <p>Home Page - central point of navigation to the rest of the pages within the website</p>
+
+                    <ul>
+                        <li>logo: redirects to the home page</li>
+                        <li>
+                            menu: pulls out/in a dropdown menu containing the home, gallery, connect, disconnect,
+                            settings and info buttons (only available on a mobile device)
+                        </li>
+                        <li>connect: redirects to the login page (only available when not logged in)</li>
+                        <li>disconnect: logs the user out of their account and redirects to home page (only available when logged in)</li>
+                        <li>gallery: redirects to the gallery page</li>
+                        <li>settings: redirects to the settings page</li>
+                        <li>info: redirects to the information page</li>
+                        <li>get started: redirects to gallery page when logged in, or to login page otherwise</li>
+                    </ul>
+
+                    <p>Login Page</p>
+
+                    <ul>
+                        <li>logo: redirects to the home page</li>
+                        <li>
+                            menu: pulls out/in a sidebar menu containing the home, gallery, connect, disconnect,
+                            settings and info buttons (only available on a mobile device)
+                        </li>
+                        <li>connect: redirects to the login page (only available when not logged in)</li>
+                        <li>disconnect: logs the user out of their account and redirects to home page (only available when logged in)</li>
+                        <li>home: redirects to the home page</li>
+                        <li>info: redirects to the information page</li>
+                        <li>
+                            remember me: stores the credentials so that the user will not have to enter them
+                            the next time he visits from the same device
+                        </li>
+                        <li>
+                            login: finalizes the login action, logging the user in if the credentials are correct,
+                            and then redirects them to the main page
+                        </li>
+                        <li>forgot password: redirects to password recovery page</li>
+                        <li>not registered: redirects to register page</li>
+                    </ul>
+
+                    <p>Register Page</p>
+
+                    <ul>
+                        <li>logo: redirects to the home page</li>
+                        <li>
+                            menu: pulls out/in a sidebar menu containing the home, gallery, connect, disconnect,
+                            settings and info buttons (only available on a mobile device)
+                        </li>
+                        <li>connect: redirects to the login page (only available when not logged in)</li>
+                        <li>disconnect: logs the user out of their account and redirects to home page (only available when logged in)</li>
+                        <li>home: redirects to the home page</li>
+                        <li>info: redirects to the information page</li>
+                        <li>
+                            register: finalizes the register action, creating the user a new account if
+                            the provided information is correct and redirecting the user to the login page
+                        </li>
+                    </ul>
+
+                    <p>Recover Page</p>
+
+                    <ul>
+                        <li>logo: redirects to the home page</li>
+                        <li>
+                            menu: pulls out/in a sidebar menu containing the home, gallery, connect, disconnect,
+                            settings and info buttons (only available on a mobile device)
+                        </li>
+                        <li>connect: redirects to the login page (only available when not logged in)</li>
+                        <li>disconnect: logs the user out of their account and redirects to home page (only available when logged in)</li>
+                        <li>home: redirects to the home page</li>
+                        <li>info: redirects to the information page</li>
+                        <li>recover: sends the user an email containing their lost password</li>
+                    </ul>
+
+                    <p>Gallery Page - view and edit pictures</p>
+
+                    <ul>
+                        <li>logo: redirects to the home page</li>
+                        <li>
+                            menu: pulls out/in a sidebar menu containing the home, gallery, connect, disconnect,
+                            settings and info buttons (only available on a mobile device)
+                        </li>
+                        <li>connect: redirects to the login page (only available when not logged in)</li>
+                        <li>disconnect: logs the user out of their account and redirects to home page (only available when logged in)</li>
+                        <li>home: redirects to the home page</li>
+                        <li>info: redirects to the information page</li>
+                        <li>platforms: select which social media platform to view pictures from</li>
+                        <li>link: connect to the selected social media platform to import pictures from it</li>
+                        <li>upload: quickly upload a picture that is stored locally</li>
+                        <li>view: pop up a selected image to view it up close, along with any other data it comes with</li>
+                        <li>minimize: exit view mode</li>
+                        <li>edit: apply filters to picture</li>
+                    </ul>
+
+                    <p>Settings Page</p>
+
+                    <ul>
+                        <li>logo: redirects to the home page</li>
+                        <li>
+                            menu: pulls out/in a sidebar menu containing the home, gallery, connect, disconnect,
+                            settings and info buttons (only available on a mobile device)
+                        </li>
+                        <li>connect: redirects to the login page (only available when not logged in)</li>
+                        <li>disconnect: logs the user out of their account and redirects to home page (only available when logged in)</li>
+                        <li>home: redirects to the home page</li>
+                        <li>info: redirects to the information page</li>
+                        <li>change username: link new username to user</li>
+                        <li>change email: link new email to user</li>
+                        <li>change password: link new password to user</li>
+                        <li>link/unlink platform: connect to a new platform or disconnect from one</li>
+                    </ul>
+
+                    <p>Information Page - some brief details about the web application</p>
+
+                    <ul>
+                        <li>logo: redirects to the home page</li>
+                        <li>
+                            menu: pulls out/in a sidebar menu containing the home, gallery, connect, disconnect,
+                            settings and info buttons (only available on a mobile device)
+                        </li>
+                        <li>connect: redirects to the login page (only available when not logged in)</li>
+                        <li>disconnect: logs the user out of their account and redirects to home page (only available when logged in)</li>
+                        <li>home: redirects to the home page</li>
+                        <li>info: redirects to the information page</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>2.3 User Classes and Characteristics</h4>
+
+                    <ul>
+                        <li>Guest: a simple viewer of the website</li>
+                        <li>User: user with an associated account that can import and manage pictures</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>2.4 Operating Environment</h4>
+
+                    <p>The developed product can be used on any device with a connection to the Internet and a browser installed.</p>
+                </section>
+
+                <section>
+                    <h4>2.5 Design and Implementation Constraints</h4>
+
+                    <p>Picture Point is developed in PHP and uses HTML, CSS and JavaScript for its visualization engine.</p>
+                </section>
+            </section>
+
+            <section>
+                <h3>3. External Interface Requirements</h3>
+
+                <section>
+                    <h4>3.1 User Interfaces</h4>
+
+                    <div>
+                        <figure typeof="sa:image">
+                            <figcaption>Home Page</figcaption>
+                            <img src="../screenshots/home_page.png" alt="Home Page Screenshot" width="1000">
+                        </figure>
+    
+                        <figure typeof="sa:image">
+                            <figcaption>Login Page</figcaption>
+                            <img src="../screenshots/login_page.png" alt="Login Page Screenshot" width="1000">
+                        </figure>
+    
+                        <figure typeof="sa:image">
+                            <figcaption>Register Page</figcaption>
+                            <img src="../screenshots/register_page.png" alt="Register Page Screenshot" width="1000">
+                        </figure>
+
+                        <figure typeof="sa:image">
+                            <figcaption>Recover Page</figcaption>
+                            <img src="../screenshots/recover_page.png" alt="Recover Page Screenshot" width="1000">
+                        </figure>
+    
+                        <figure typeof="sa:image">
+                            <figcaption>Gallery Page</figcaption>
+                            <img src="../screenshots/gallery_page.png" alt="Gallery Page Screenshot" width="1000">
+                        </figure>
+    
+                        <figure typeof="sa:image">
+                            <figcaption>Picture View Mode</figcaption>
+                            <img src="../screenshots/picture_view_mode.png" alt="Picture View Mode Screenshot" width="1000">
+                        </figure>
+    
+                        <figure typeof="sa:image">
+                            <figcaption>Settings Page</figcaption>
+                            <img src="../screenshots/settings_page.png" alt="Settings Page Screenshot" width="1000">
+                        </figure>
+    
+                        <figure typeof="sa:image">
+                            <figcaption>Information Page</figcaption>
+                            <img src="../screenshots/information_page.png" alt="Information Page Screenshot" width="1000">
+                        </figure>
+                    </div>
+                </section>
+
+                <section>
+                    <h4>3.2 Software Interfaces</h4>
+
+                    <p>The minimum software requirements of Picture Point are a working browser and a connection to the Internet.</p>
+                </section>
+    
+                <section>
+                    <h4>3.4 Communications Interfaces</h4>
+
+                    <p>Picture Point requires an Internet connection. The communication standard to be used is HTTP.</p>
+                </section>
+            </section>
+
+            <section>
+                <h3>4. System Features</h3>
+
+                <section>
+                    <h4>4.1 Home Page</h4>
+
+                    <p>Guests and users can read a few details on how the app works and navigate to all other pages from this page.</p>
+                </section>
+
+                <section>
+                    <h4>4.2 Login Page</h4>
+
+                    <p>Users of the app can login by entering their credentials and therefore access other functionalities of the app.</p>
+                </section>
+
+                <section>
+                    <h4>4.3 Register Page</h4>
+
+                    <p>Guests can create an account and then use it to log into the application and access all the features it provides.</p>
+                </section>
+
+                <section>
+                    <h4>4.4 Gallery Page</h4>
+
+                    <p>Users can import, view, download, edit or delete their pictures from this page.</p>
+                </section>
+
+                <section>
+                    <h4>4.5 Settings Page</h4>
+
+                    <p>Users can change their username, email, password, or link their platforms to Picture Point.</p>
+                </section>
+
+                <section>
+                    <h4>4.6 Information Page</h4>
+
+                    <p>Guests and users alike can read some information about the dev team and how the app was created.</p>
+                </section>
+            </section>
+
+            <section>
+                <h3>5. Other Nonfunctional Requirements</h3>
+    
+                <section>
+                    <h4>5.1 Safety Requirements</h4>
+
+                    <p>
+                        To ensure that none of our users loses any data while using the application,
+                        the developer team works on Picture Point regularly.
+                    </p>
+                </section>
+    
+                <section>
+                    <h4>5.2 Security Requirements</h4>
+
+                    <p>
+                        Picture Point does not have any security requirements, therefore any user can use it
+                        without any additional privileges.
+                    </p>
+                </section>
+    
+                <section>
+                    <h4>5.3 Software Quality Attributes</h4>
+
+                    <ul>
+                        <li>Adaptability</li>
+                        <li>Portability</li>
+                        <li>Reusability</li>
+                        <li>Availability</li>
+                        <li>Maintainability</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section>
+                <h3>6. Contribution</h3>
+
+                <section>
+                    <h4>H&#238;rtopanu Tudor-Alin</h4>
+
+                    <ul>
+                        <li>Overall Website Design Structure</li>
+                        <li>Website Design Implementation</li>
+                        <li>Home Page</li>
+                        <li>Login Page</li>
+                        <li>Register Page</li>
+                        <li>Recovery Page</li>
+                        <li>Gallery Page</li>
+                        <li>Settings Page</li>
+                        <li>Information Page</li>
+                        <li>User Authentication Session</li>
+                        <li>Documentation</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>P&#259;lie R&#259;zvan-Aviv</h4>
+
+                    <ul>
+                        <li>Overall Website Design Structure</li>
+                        <li>Website Design Implementation</li>
+                        <li>Gallery Page</li>
+                        <li>Settings Page</li>
+                        <li>The MVC Pattern</li>
+                        <li>User Authentication</li>
+                        <li>Local Source Upload</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h4>Str&#238;mbei Claudiu-C&#259;t&#259;lin</h4>
+
+                    <ul>
+                        <li>Overall Website Design Structure</li>
+                        <li>Website Design Implementation</li>
+                        <li>Home Page</li>
+                        <li>Information Page</li>
+                        <li>The MVC Pattern</li>
+                        <li>Unsplash Link</li>
+                        <li>Presentation Video</li>
+                    </ul>
+                </section>
+            </section>
+        </article>
+    </body>
+</html>
