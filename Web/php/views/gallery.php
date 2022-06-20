@@ -9,7 +9,7 @@ use app\core\Unsplash;
     <head>
         <title>Gallery</title>
 
-        <link rel="icon" type="image/x-icon" href="../media/Logos/final/pptext.svg"/>
+        <link rel="icon" type="image/x-icon" href="../../media/Logos/final/pptext.svg"/>
         <link rel="stylesheet" href="../../css/gallery.css"/>
         <link rel="stylesheet" href="../../css/navbar.css"/>
 
@@ -133,6 +133,7 @@ use app\core\Unsplash;
                         <p>Upload Picture</p>
                     </button>
                 </div>
+
                 <div class="form-popup" id="popup-form">
                     <form action="../../../../imageUpload/upload.php" method="post" class="form-container" enctype="multipart/form-data">
                         <h1>Upload</h1>
@@ -144,6 +145,7 @@ use app\core\Unsplash;
                         <button type="button" class="btn cancel" onclick="closeForm('popUPForm')">Close</button>
                     </form>
                 </div>
+
                     <div class="form-popup" id="unspForm">
                         <form action="../../../../imageUpload/Unsplash.php" method="post" class="form-container" enctype="multipart/form-data">
                             <h1>Unsplash connect</h1>
@@ -154,6 +156,7 @@ use app\core\Unsplash;
                             ?>
                         </form>
                     </div>
+
                     <div class="form-popup" id="twitterForm">
                         <form action="../../../../imageUpload/downloadTwitter.php" method="post" class="form-container" enctype="multipart/form-data">
                             <h1>Twitter connect</h1>
@@ -162,8 +165,91 @@ use app\core\Unsplash;
                             <button type="connectTwitter" name="connectTwitter">Log in and download pictures</button>
                             <button type="button" class="btn cancel" onclick="closeForm('twitterForm')">Close</button>
                         </form>
-
                 </div>
+
+            <div id="image-container">
+                <?php
+                    $username = $_COOKIE['unspuser'];
+
+                    $dir_path = "../views/unsphotos/".$username.'/';
+                    $final_path = "../".$dir_path;
+                    $extensions_array = array('jpg','png','jpeg');
+
+                    if(is_dir($dir_path))
+                    {
+                        $files = scandir($dir_path);
+
+                        for($i = 0; $i < count($files); $i++)
+                        {
+                            if($files[$i] !='.' && $files[$i] !='..')
+                            {
+
+                                // get file extension
+                                $file = pathinfo($files[$i]);
+                                $extension = $file['extension'];
+
+                                // check file extension
+                                if(in_array($extension, $extensions_array))
+                                {
+                                    // show image
+                                    echo "<img class='img' src='$final_path$files[$i]' alt='Image'>";
+                                }
+                            }
+                        }
+                    }
+                ?>
+            </div>
+
+            <div id="myModal" class="modal">
+
+                    <span class="close">&times;</span>
+
+                    <form id="settings-container">
+                        <input type="submit" id="save" value="Save">
+
+                        <div class="filter">
+                            <input type="range" name="brightness" id="brightness" min="0" max="100" value="0" step="0.1">
+                            <label for="brightness">Brightness</label>
+                        </div>
+                        
+                        <div class="filter">
+                            <input type="range" name="contrast" id="contrast" min="0" max="100" value="0" step="0.1">
+                            <label for="contrast">Contrast</label>
+                        </div>
+
+                        <div class="filter">
+                            <input type="range" name="saturation" id="saturation" min="0" max="100" value="0" step="0.1">
+                            <label for="saturation">Saturation</label>
+                        </div>
+
+                        <div class="filter">
+                            <input type="range" name="gray" id="gray" min="0" max="100" value="0" step="0.1">
+                            <label for="gray">Grayscale</label>
+                        </div>
+
+                        <div class="filter">
+                            <input type="range" name="blur" id="blur" min="0" max="100" value="0" step="0.1">
+                            <label for="blur">Blur</label>
+                        </div>
+
+                        <div class="filter">
+                            <input type="range" name="opacity" id="opacity" min="0" max="100" value="0" step="0.1">
+                            <label for="opacity">Opacity</label>
+                        </div>
+
+                        <div class="filter">
+                            <input type="range" name="sepia" id="sepia" min="0" max="100" value="0" step="0.1">
+                            <label for="sepia">Sepia</label>
+                        </div>
+                    </form>
+
+                    <div id="canvas">
+                        <img class="modal-content" id="img01">
+
+                        <div id="caption"></div>
+                    </div>
+                </div>
+
                 <script>
                     function openForm(string) {
                         document.getElementById(string.toString()).style.display = "block";
@@ -172,41 +258,30 @@ use app\core\Unsplash;
                     function closeForm(string) {
                         document.getElementById(string.toString()).style.display = "none";
                     }
-                </script>
-                    <div id="image-container">
-                        <?php
 
-                        $username = $_COOKIE['unspuser'];
+                    var modal = document.getElementById("myModal");
 
-                        $dir_path = "../views/unsphotos/".$username.'/';
-                        $final_path = "../".$dir_path;
-                        $extensions_array = array('jpg','png','jpeg');
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementsByClassName("img");
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
 
-                        if(is_dir($dir_path))
-                        {
-                            $files = scandir($dir_path);
-
-                            for($i = 0; $i < count($files); $i++)
-                            {
-                                if($files[$i] !='.' && $files[$i] !='..')
-                                {
-
-                                    // get file extension
-                                    $file = pathinfo($files[$i]);
-                                    $extension = $file['extension'];
-
-                                    // check file extension
-                                    if(in_array($extension, $extensions_array))
-                                    {
-                                        // show image
-                                        echo "<img class='img' src='$final_path$files[$i]' ><br>";
-                                    }
-                                }
-                            }
+                    for (let i = 0; i < img.length; i++) {
+                            img[i].onclick = function() {
+                            modal.style.display = "block";
+                            modalImg.src = this.src;
+                            captionText.innerHTML = this.alt;
                         }
+                    }
 
-                        ?>
-                    </div>
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                        modal.style.display = "none";
+                    }
+                </script>
         </div>
     </body>
 </html>

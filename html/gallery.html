@@ -125,13 +125,86 @@
                     <img class="img" src="../media/in-page-images/razvan.png" alt="Razvan">
                 </div>
 
+                <div id="myModal" class="modal">
+
+                    <span class="close">&times;</span>
+
+                    <form id="settings-container">
+                        <input type="submit" id="save" value="Save">
+
+                        <div class="filter">
+                            <input type="range" name="brightness" id="brightness" min="0" max="100" value="0" step="0.1">
+                            <label for="brightness">Brightness</label>
+                        </div>
+                        
+                        <div class="filter">
+                            <input type="range" name="contrast" id="contrast" min="0" max="100" value="0" step="0.1">
+                            <label for="contrast">Contrast</label>
+                        </div>
+
+                        <div class="filter">
+                            <input type="range" name="saturation" id="saturation" min="0" max="100" value="0" step="0.1">
+                            <label for="saturation">Saturation</label>
+                        </div>
+
+                        <div class="filter">
+                            <input type="range" name="gray" id="gray" min="0" max="100" value="0" step="0.1">
+                            <label for="gray">Grayscale</label>
+                        </div>
+
+                        <div class="filter">
+                            <input type="range" name="blur" id="blur" min="0" max="100" value="0" step="0.1">
+                            <label for="blur">Blur</label>
+                        </div>
+
+                        <div class="filter">
+                            <input type="range" name="opacity" id="opacity" min="0" max="100" value="0" step="0.1">
+                            <label for="opacity">Opacity</label>
+                        </div>
+
+                        <div class="filter">
+                            <input type="range" name="sepia" id="sepia" min="0" max="100" value="0" step="0.1">
+                            <label for="sepia">Sepia</label>
+                        </div>
+                    </form>
+
+                    <div id="canvas">
+                        <img class="modal-content" id="img01">
+
+                        <div id="caption"></div>
+                    </div>
+                </div>
+
                 <script>
                     function openForm(string) {
-                        document.getElementById(string.toString()).style.display = "block";
+                        document.getElementById(string.toString()).style.display = "flex";
                     }
 
                     function closeForm(string) {
                         document.getElementById(string.toString()).style.display = "none";
+                    }
+
+                    var modal = document.getElementById("myModal");
+
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementsByClassName("img");
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+
+                    for (let i = 0; i < img.length; i++) {
+                            img[i].onclick = function() {
+                            modal.style.display = "block";
+                            modalImg.src = this.src;
+                            captionText.innerHTML = this.alt;
+                        }
+                    }
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                        modal.style.display = "none";
                     }
                 </script>
             </div>
